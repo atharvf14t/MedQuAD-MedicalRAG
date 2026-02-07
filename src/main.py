@@ -1,5 +1,12 @@
 import argparse
 import json
+import time
+import numpy as np
+
+from src.index.build_index import build_faiss_index
+from src.embeddings.sentence_transformer import SentenceTransformerEmbedder
+from src.index.faiss_index import FaissIndex
+
 from pathlib import Path
 
 from src.data.parser import parse_medquad
@@ -34,6 +41,51 @@ def build_corpus(args):
 
     logger.info(f"Chunks saved to: {output_path}")
 
+def build_index(args):
+    logger.info("Loading chunks...")
+    with open(args.chunks_path, "r", encoding="utf-8") as f:
+        chunks = json.load(f)
+
+    texts = [c["text"] for c in chunks]
+
+    logger.info(f"Total chunks: {len(texts)}")
+
+    # Embeddings
+    embedder = SentenceTransformerEmbedder(args.embedding_model)
+
+    logger.info("Computing embeddings...")
+    embeddings, throughput, embed_time = embedder.embed_texts(texts)
+
+    logger.info(f"Embedding throughput: {throughput:.2f} chunks/sec")
+
+    dim = embeddings.shape[1]
+
+    # Build FAISS index
+    index = FaissIndex(dim)
+
+    logger.info("Building FAISS index...")
+    index_time = index.build(embeddings)
+
+    logger.info(f"Index build time: {index_time:.2f} sec")
+
+    # Save index
+    index.save(args.index_path)
+
+    # Save embedding metadata
+    meta = {
+        "embedding_model": args.embedding_model,
+        "embedding_dim": dim,
+        "num_chunks": len(texts),
+        "throughput_chunks_per_sec": throughput,
+        "embedding_time_sec": embed_time,
+        "index_time_sec": index_time,
+    }
+
+    meta_path = args.index_path.replace(".faiss", "_meta.json")
+    with open(meta_path, "w") as f:
+        json.dump(meta, f, indent=2)
+
+    logger.info(f"Index saved to: {args.index_path}")
 
 def main():
     parser = argparse.ArgumentParser()
@@ -49,12 +101,26 @@ def main():
     build_parser.add_argument("--chunk_size", type=int, default=256)
     build_parser.add_argument("--chunk_overlap", type=int, default=50)
 
+    # ---- build-index ----
+    index_parser = subparsers.add_parser("build-index")
+    index_parser.add_argument("--chunks_path", required=True)
+    index_parser.add_argument("--index_path", required=True)
+    index_parser.add_argument("--embedding_model", required=True)
+
     args = parser.parse_args()
 
     if args.command == "build-corpus":
         build_corpus(args)
+    elif args.command == "build-index":
+        build_faiss_index(
+            args.chunks_path,
+            args.index_path,
+            args.embedding_model,
+        )
     else:
         parser.print_help()
+
+
 
 
 if __name__ == "__main__":
