@@ -3,6 +3,8 @@ import json
 import time
 import numpy as np
 
+from src.retrieval.dense_retriever import DenseRetriever
+
 from src.index.build_index import build_faiss_index
 from src.embeddings.sentence_transformer import SentenceTransformerEmbedder
 from src.index.faiss_index import FaissIndex
@@ -14,7 +16,6 @@ from src.data.chunker import TokenChunker
 from src.utils.logging import get_logger
 
 logger = get_logger(__name__)
-
 
 def build_corpus(args):
     logger.info("Scanning and parsing MedQuAD dataset...")
@@ -107,6 +108,15 @@ def main():
     index_parser.add_argument("--index_path", required=True)
     index_parser.add_argument("--embedding_model", required=True)
 
+
+    # ---- query ----
+    query_parser = subparsers.add_parser("query")
+    query_parser.add_argument("--index_path", required=True)
+    query_parser.add_argument("--embedding_model", required=True)
+    query_parser.add_argument("--question", required=True)
+    query_parser.add_argument("--top_k", type=int, default=5)
+    query_parser.add_argument("--use_mmr", action="store_true")
+
     args = parser.parse_args()
 
     if args.command == "build-corpus":
@@ -117,11 +127,31 @@ def main():
             args.index_path,
             args.embedding_model,
         )
+
+    elif args.command == "query":
+        retriever = DenseRetriever(
+            args.index_path,
+            args.embedding_model,
+        )
+
+        if args.use_mmr:
+            results = retriever.search_with_mmr(
+                args.question,
+                top_k=args.top_k
+            )
+        else:
+            results = retriever.search(
+                args.question,
+                top_k=args.top_k
+            )
+
+        print("\nTop results:\n")
+        for r in results:
+            print(f"Score: {r['score']:.4f}")
+            print(r["chunk"]["text"])
+            print("-" * 60)
     else:
         parser.print_help()
-
-
-
 
 if __name__ == "__main__":
     main()
