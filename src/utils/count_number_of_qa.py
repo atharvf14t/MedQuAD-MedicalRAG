@@ -1,3 +1,7 @@
+"""Count QA statistics in MedQuAD dataset.
+
+Scans XML files and counts QA pairs with/without answers.
+"""
 # python -m utils.count_number_of_qa  --data_dir MedQuAD-master1
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -45,6 +49,7 @@ def scan_medquad(data_dir: str) -> Tuple[int, int, int]:
 
 
 def main():
+    """CLI to print MedQuAD QA statistics."""
     import argparse
 
     parser = argparse.ArgumentParser(description="Scan MedQuAD QA statistics")

@@ -1,3 +1,8 @@
+"""MMR (Maximal Marginal Relevance) retrieval combining density and diversity.
+
+Performs dense retrieval followed by MMR reranking to promote diversity
+in the retrieved set.
+"""
 import json
 import argparse
 import faiss
@@ -7,6 +12,14 @@ from sentence_transformers import SentenceTransformer
 
 class MMRRetriever:
     def __init__(self, index_path: str, metadata_path: str, model_name: str, device: str = "cpu"):
+        """Initialize MMRRetriever.
+        
+        Args:
+            index_path: Path to FAISS index
+            metadata_path: Path to chunk metadata JSON
+            model_name: Sentence transformer model name
+            device: Device to run on ('cpu' or 'cuda')
+        """
         self.model = SentenceTransformer(model_name, device=device)
         self.index = faiss.read_index(index_path)
 
@@ -14,6 +27,14 @@ class MMRRetriever:
             self.metadata = json.load(f)
 
     def embed_texts(self, texts):
+        """Embed list of texts.
+        
+        Args:
+            texts: List of text strings
+            
+        Returns:
+            numpy array of normalized embeddings
+        """
         return self.model.encode(
             texts,
             convert_to_numpy=True,
@@ -21,11 +42,29 @@ class MMRRetriever:
         )
 
     def embed_query(self, query):
+        """Embed single query string.
+        
+        Args:
+            query: Query text
+            
+        Returns:
+            1D numpy array of embedding
+        """
         return self.embed_texts([query])[0]
 
     def mmr(self, query_vec, candidate_vecs, top_k, lambda_param=0.7):
-        """
-        Maximal Marginal Relevance selection.
+        """Maximal Marginal Relevance selection.
+        
+        Balances relevance to query and diversity among selected items.
+        
+        Args:
+            query_vec: Query embedding vector
+            candidate_vecs: Array of candidate embeddings
+            top_k: Number of items to select
+            lambda_param: Trade-off parameter (0-1). Higher values prioritize relevance.
+            
+        Returns:
+            List of selected candidate indices
         """
         selected = []
         candidate_indices = list(range(len(candidate_vecs)))
@@ -56,8 +95,16 @@ class MMRRetriever:
         return selected
 
     def retrieve(self, query: str, top_k: int = 5, lambda_param: float = 0.7, fetch_k: int = 20):
-        """
-        Perform dense retrieval + MMR reranking.
+        """Perform dense retrieval + MMR reranking.
+        
+        Args:
+            query: Query text
+            top_k: Number of final results to return
+            lambda_param: MMR trade-off parameter (0-1)
+            fetch_k: Initial number of dense-retrieved candidates for MMR
+            
+        Returns:
+            List of top-k diverse retrieved documents
         """
         query_vec = self.embed_query(query).reshape(1, -1)
 
@@ -100,6 +147,7 @@ class MMRRetriever:
 
 
 def main():
+    """CLI for MMR retrieval."""
     parser = argparse.ArgumentParser(description="MMR Retriever CLI")
 
     parser.add_argument("--question", required=True)

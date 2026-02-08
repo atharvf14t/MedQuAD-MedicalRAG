@@ -1,3 +1,7 @@
+"""Token-based text chunking for QA documents.
+
+Provides token-aware chunking with configurable size and overlap.
+"""
 from typing import List, Dict
 from transformers import AutoTokenizer
 
@@ -9,13 +13,25 @@ class TokenChunker:
         chunk_size: int = 256,
         chunk_overlap: int = 50,
     ):
+        """Initialize TokenChunker.
+        
+        Args:
+            tokenizer_name: HuggingFace tokenizer model name
+            chunk_size: Size of each chunk in tokens
+            chunk_overlap: Overlap between consecutive chunks in tokens
+        """
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
 
     def chunk_record(self, record: Dict) -> List[Dict]:
-        """
-        Chunk a single QA record into token chunks.
+        """Chunk a single QA record into token chunks.
+        
+        Args:
+            record: QA record with question, answer, qa_id, doc_id, source, url
+            
+        Returns:
+            List of chunk dicts with chunk_id, doc_id, qa_id, text, metadata
         """
         text = f"Question: {record['question']}\nAnswer: {record['answer']}"
         tokens = self.tokenizer.encode(text, add_special_tokens=False)
@@ -50,6 +66,14 @@ class TokenChunker:
         return chunks
 
     def chunk_corpus(self, records: List[Dict]) -> List[Dict]:
+        """Chunk a list of QA records.
+        
+        Args:
+            records: List of QA records
+            
+        Returns:
+            Flat list of all chunks from all records
+        """
         all_chunks = []
         for record in records:
             all_chunks.extend(self.chunk_record(record))

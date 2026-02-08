@@ -1,3 +1,8 @@
+"""Hybrid retrieval combining dense embeddings and BM25 keyword matching.
+
+Combines dense semantic retrieval with lexical BM25 matching for
+more robust document ranking.
+"""
 import json
 import argparse
 import faiss
@@ -8,6 +13,14 @@ from rank_bm25 import BM25Okapi
 
 class HybridRetriever:
     def __init__(self, index_path: str, metadata_path: str, model_name: str, device: str = "cpu"):
+        """Initialize HybridRetriever.
+        
+        Args:
+            index_path: Path to FAISS index
+            metadata_path: Path to chunk metadata JSON
+            model_name: Sentence transformer model name
+            device: Device to run on ('cpu' or 'cuda')
+        """
         # Dense model
         self.model = SentenceTransformer(model_name, device=device)
 
@@ -24,6 +37,14 @@ class HybridRetriever:
         self.bm25 = BM25Okapi(tokenized_corpus)
 
     def embed_query(self, query: str) -> np.ndarray:
+        """Embed query string.
+        
+        Args:
+            query: Query text
+            
+        Returns:
+            2D numpy array of shape (1, embedding_dim)
+        """
         embedding = self.model.encode(
             query,
             convert_to_numpy=True,
@@ -32,8 +53,16 @@ class HybridRetriever:
         return embedding.reshape(1, -1)
 
     def retrieve(self, query: str, top_k: int = 5, alpha: float = 0.5, fetch_k: int = 50):
-        """
-        Hybrid retrieval combining dense + BM25.
+        """Hybrid retrieval combining dense + BM25.
+        
+        Args:
+            query: Query text
+            top_k: Number of results to return
+            alpha: Weight for dense score (0-1). (1-alpha) is weight for BM25.
+            fetch_k: Initial number of dense results to consider
+            
+        Returns:
+            List of top-k hybrid-ranked documents
         """
         query_vec = self.embed_query(query)
 
@@ -83,6 +112,7 @@ class HybridRetriever:
 
 
 def main():
+    """CLI for hybrid retrieval."""
     parser = argparse.ArgumentParser(description="Hybrid Retriever CLI")
 
     parser.add_argument("--question", required=True)

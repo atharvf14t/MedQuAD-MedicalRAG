@@ -1,11 +1,21 @@
+"""Dataset evaluation for RAG pipeline.
+
+Computes answer quality metrics (EM, F1) and retrieval effectiveness.
+"""
 import json
 from tqdm import tqdm
 from src.generation.rag_pipeline import compute_em, compute_f1
 
 
 def recall_at_k(retrieved_chunks, gold_answer):
-    """
-    Check if gold answer appears in any retrieved chunk.
+    """Check if gold answer appears in any retrieved chunk.
+    
+    Args:
+        retrieved_chunks: List of retrieved chunks
+        gold_answer: Reference answer text
+        
+    Returns:
+        1 if gold answer found, 0 otherwise
     """
     gold = gold_answer.lower()
     for chunk in retrieved_chunks:
@@ -15,6 +25,18 @@ def recall_at_k(retrieved_chunks, gold_answer):
 
 
 def evaluate_dataset(dataset, retriever, generator, top_k=5, use_mmr=True):
+    """Evaluate RAG pipeline on a dataset.
+    
+    Args:
+        dataset: List of evaluation items with question and answer
+        retriever: Retriever instance
+        generator: Generator instance
+        top_k: Number of chunks to retrieve
+        use_mmr: Whether to use MMR reranking
+        
+    Returns:
+        Dict with metrics: EM, F1, Recall@k
+    """
     total = 0
     em_total = 0
     f1_total = 0

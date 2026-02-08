@@ -1,3 +1,7 @@
+"""Visualize token length distribution in chunks.
+
+Generates histogram of tokens per chunk using HuggingFace tokenizers.
+"""
 import json
 import argparse
 from pathlib import Path
@@ -8,6 +12,15 @@ from transformers import AutoTokenizer
 
 
 def load_chunks(path: Path, limit: int):
+    """Load chunks from JSON file.
+    
+    Args:
+        path: Path to chunks JSON
+        limit: Maximum number of chunks to load
+        
+    Returns:
+        List of chunk dicts
+    """
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     if not isinstance(data, list):
@@ -16,6 +29,15 @@ def load_chunks(path: Path, limit: int):
 
 
 def token_lengths(chunks, tokenizer):
+    """Compute token length for each chunk.
+    
+    Args:
+        chunks: List of chunk dicts
+        tokenizer: HuggingFace tokenizer
+        
+    Returns:
+        List of token counts
+    """
     lengths = []
     for rec in chunks:
         text = rec.get("text", "")
@@ -25,6 +47,14 @@ def token_lengths(chunks, tokenizer):
 
 
 def plot_hist(lengths, bins: int, out_path: Path, title: str):
+    """Create and save histogram.
+    
+    Args:
+        lengths: List of token counts
+        bins: Number of histogram bins
+        out_path: Output PNG path
+        title: Histogram title
+    """
     plt.figure(figsize=(8, 5))
     plt.hist(lengths, bins=bins, color="#4C72B0", edgecolor="black")
     plt.xlabel("Token count per chunk")
@@ -36,6 +66,7 @@ def plot_hist(lengths, bins: int, out_path: Path, title: str):
 
 
 def main():
+    """CLI for plotting token length histogram."""
     parser = argparse.ArgumentParser(description="Plot token-length histogram for chunk file")
     parser.add_argument("input", help="Path to chunks JSON file")
     parser.add_argument("--model", default="sentence-transformers/all-MiniLM-L6-v2", help="Tokenizer model name")

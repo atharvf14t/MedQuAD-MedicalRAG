@@ -1,3 +1,7 @@
+"""Clean whitespace in corpus JSON files.
+
+Removes extra spaces and improves text formatting.
+"""
 import json
 import re
 import argparse
@@ -14,6 +18,12 @@ def clean_text(text: str) -> str:
 
 
 def clean_corpus(input_path: str, output_path: str):
+    """Clean corpus by removing extra whitespace.
+    
+    Args:
+        input_path: Path to input corpus.json
+        output_path: Path to save cleaned corpus
+    """
     input_path = Path(input_path)
     output_path = Path(output_path)
 

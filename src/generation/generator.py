@@ -1,3 +1,8 @@
+"""RAG Generator combining retrieval and text generation.
+
+Performs retrieval-augmented generation using a variety of retrievers
+(dense, MMR, hybrid) and a Flan-T5 generator model.
+"""
 import json
 import argparse
 import torch
@@ -11,11 +16,26 @@ from src.retrieval.hybrid_retriever import HybridRetriever
 
 class RAGGenerator:
     def __init__(self, model_name="google/flan-t5-base", device="cpu"):
+        """Initialize RAGGenerator.
+        
+        Args:
+            model_name: Model identifier from HuggingFace (e.g., 'google/flan-t5-base')
+            device: Device to run model on ('cpu' or 'cuda')
+        """
         self.device = device
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(device)
 
     def generate(self, prompt, max_new_tokens=256):
+        """Generate text from prompt using the model.
+        
+        Args:
+            prompt: Input prompt text
+            max_new_tokens: Maximum tokens to generate
+            
+        Returns:
+            Generated text string
+        """
         inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True).to(self.device)
 
         outputs = self.model.generate(
@@ -31,6 +51,18 @@ class RAGGenerator:
 
 
 def load_system_prompt(prompt_file, prompt_name):
+    """Load system prompt from JSON file.
+    
+    Args:
+        prompt_file: Path to prompts JSON file
+        prompt_name: Name of prompt template to load
+        
+    Returns:
+        System prompt string
+        
+    Raises:
+        ValueError: If prompt name not found in file
+    """
     with open(prompt_file, "r", encoding="utf-8") as f:
         prompts = json.load(f)
 
@@ -41,6 +73,17 @@ def load_system_prompt(prompt_file, prompt_name):
 
 
 def get_retriever(args):
+    """Instantiate retriever based on args.
+    
+    Args:
+        args: argparse Namespace with retriever type and paths
+        
+    Returns:
+        Retriever instance (DenseRetriever, MMRRetriever, or HybridRetriever)
+        
+    Raises:
+        ValueError: If retriever type is invalid
+    """
     if args.retriever == "dense":
         return DenseRetriever(args.index_path, args.metadata_path, args.embedding_model, device=args.device)
 
@@ -55,6 +98,16 @@ def get_retriever(args):
 
 
 def build_prompt(system_prompt, context_chunks, question):
+    """Build complete prompt from system prompt, context, and question.
+    
+    Args:
+        system_prompt: System instructions
+        context_chunks: List of retrieved document chunks
+        question: User question
+        
+    Returns:
+        Complete prompt string
+    """
     context_text = "\n\n".join([chunk["text"] for chunk in context_chunks])
 
     prompt = (
@@ -69,6 +122,7 @@ def build_prompt(system_prompt, context_chunks, question):
 
 
 def main():
+    """CLI for single-query RAG generation."""
     parser = argparse.ArgumentParser(description="RAG Generator CLI")
 
     parser.add_argument("--question", required=True)

@@ -1,3 +1,7 @@
+"""Build QA-specific chunks using semantic text splitting.
+
+Chunks only the answer portion while prepending the question for context.
+"""
 import json
 import argparse
 from pathlib import Path
@@ -7,6 +11,12 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class QAChunker:
     def __init__(self, chunk_size: int, chunk_overlap: int):
+        """Initialize QAChunker.
+        
+        Args:
+            chunk_size: Maximum size of each chunk
+            chunk_overlap: Overlap between chunks
+        """
         self.splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size,
             chunk_overlap=chunk_overlap,
@@ -14,8 +24,13 @@ class QAChunker:
         )
 
     def chunk_record(self, record: Dict) -> List[Dict]:
-        """
-        Chunk only the answer, but always prepend the question.
+        """Chunk only the answer, but always prepend the question.
+        
+        Args:
+            record: QA record dict
+            
+        Returns:
+            List of chunk dicts with question prepended to each answer chunk
         """
         answer_chunks = self.splitter.split_text(record["answer"])
 
@@ -40,6 +55,14 @@ class QAChunker:
 
 
 def build_chunks(corpus_path: str, output_path: str, chunk_size: int, chunk_overlap: int):
+    """Build and save chunks from corpus.
+    
+    Args:
+        corpus_path: Path to corpus JSON file
+        output_path: Output path for chunks JSON
+        chunk_size: Size of chunks
+        chunk_overlap: Overlap between chunks
+    """
     corpus_path = Path(corpus_path)
 
     with open(corpus_path, "r", encoding="utf-8") as f:

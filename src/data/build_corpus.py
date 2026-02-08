@@ -1,3 +1,7 @@
+"""Build corpus from MedQuAD XML files.
+
+Parses medical Q&A documents from MedQuAD dataset into JSON format.
+"""
 import json
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -57,6 +61,12 @@ def parse_medquad(data_dir: str):
 
 
 def build_corpus(data_dir: str, output_path: str):
+    """Build and save corpus from MedQuAD dataset.
+    
+    Args:
+        data_dir: Path to MedQuAD root directory
+        output_path: Output path for corpus JSON file
+    """
     corpus = parse_medquad(data_dir)
 
     output_path = Path(output_path)

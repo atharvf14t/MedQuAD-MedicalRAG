@@ -1,3 +1,7 @@
+"""Build FAISS indexes from document chunks using embeddings.
+
+Produces a FAISS index file and metadata JSON for retrieval.
+"""
 from sentence_transformers import SentenceTransformer
 import numpy as np
 import faiss
@@ -7,6 +11,13 @@ from pathlib import Path
 
 
 def build_faiss_index(chunks_path, index_path, model_name):
+    """Build FAISS index from chunks.
+    
+    Args:
+        chunks_path: Path to chunks JSON file
+        index_path: Output path for FAISS index
+        model_name: Sentence transformer model name
+    """
     # Load chunks
     with open(chunks_path, "r", encoding="utf-8") as f:
         chunks = json.load(f)

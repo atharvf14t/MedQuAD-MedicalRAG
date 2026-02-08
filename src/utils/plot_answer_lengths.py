@@ -1,9 +1,20 @@
+"""Visualize answer length distribution in corpus.
+
+Generates histogram of answer token counts.
+"""
 import json
 import argparse
 import matplotlib.pyplot as plt
 
 
 def main(corpus_path: str, save_path: str = None, no_show: bool = False):
+    """Plot histogram of answer lengths.
+    
+    Args:
+        corpus_path: Path to corpus.json file
+        save_path: Optional path to save PNG plot
+        no_show: If True, don't display plot window
+    """
     # Load corpus
     with open(corpus_path, "r", encoding="utf-8") as f:
         corpus = json.load(f)

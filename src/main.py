@@ -1,3 +1,11 @@
+"""Main CLI orchestrator for RAG system tasks.
+
+Provides command-line interfaces for:
+- Building corpus from MedQuAD dataset
+- Building FAISS indexes from chunks
+- Running queries
+- Running evaluation
+"""
 import argparse
 import json
 import time
@@ -20,6 +28,11 @@ from src.utils.logger import get_logger
 logger = get_logger(__name__)
 
 def build_corpus(args):
+    """Build chunks from MedQuAD dataset.
+    
+    Args:
+        args: argparse Namespace with data_dir, output, tokenizer, chunk_size, chunk_overlap
+    """
     logger.info("Scanning and parsing MedQuAD dataset...")
     records = parse_medquad(args.data_dir)
 
@@ -45,6 +58,11 @@ def build_corpus(args):
     logger.info(f"Chunks saved to: {output_path}")
 
 def build_index(args):
+    """Build FAISS index from chunks.
+    
+    Args:
+        args: argparse Namespace with chunks_path, index_path, embedding_model
+    """
     logger.info("Loading chunks...")
     with open(args.chunks_path, "r", encoding="utf-8") as f:
         chunks = json.load(f)
@@ -91,6 +109,7 @@ def build_index(args):
     logger.info(f"Index saved to: {args.index_path}")
 
 def main():
+    """Parse CLI arguments and execute appropriate command."""
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command")
 

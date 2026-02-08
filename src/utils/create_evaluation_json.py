@@ -1,11 +1,20 @@
+"""Sample evaluation set from corpus.
+
+Creates a small random sample for evaluation testing.
+"""
 import json
 import random
 from pathlib import Path
 
 
 def sample_eval_set(input_path, output_path, sample_size=20, seed=42):
-    """
-    Sample QA pairs with non-empty answers to create eval set.
+    """Sample QA pairs to create evaluation set.
+    
+    Args:
+        input_path: Path to corpus.json
+        output_path: Path to save evaluation set JSON
+        sample_size: Number of samples to draw
+        seed: Random seed for reproducibility
     """
 
     random.seed(seed)
@@ -40,6 +49,7 @@ def sample_eval_set(input_path, output_path, sample_size=20, seed=42):
 
 
 def main():
+    """CLI for sampling evaluation set."""
     import argparse
 
     parser = argparse.ArgumentParser(description="Sample evaluation QA set")

@@ -16,6 +16,7 @@ class RetrievalEvaluator:
     """
     
     def __init__(self):
+        """Initialize RetrievalEvaluator."""
         pass
     
     def is_relevant(self, retrieved_chunk: Dict, gold_doc_id: str) -> bool:

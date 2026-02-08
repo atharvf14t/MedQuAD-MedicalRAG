@@ -1,3 +1,7 @@
+"""RAG pipeline utilities for text normalization and answer generation.
+
+Provides helper functions for computing metrics and RAG generation.
+"""
 import re
 import numpy as np
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
@@ -19,10 +23,28 @@ def normalize_text(s):
 
 
 def compute_em(pred, gold):
+    """Compute exact match.
+    
+    Args:
+        pred: Predicted answer
+        gold: Gold reference answer
+        
+    Returns:
+        1 if normalized strings match exactly, 0 otherwise
+    """
     return int(normalize_text(pred) == normalize_text(gold))
 
 
 def compute_f1(pred, gold):
+    """Compute F1 score (token-level overlap).
+    
+    Args:
+        pred: Predicted answer
+        gold: Gold reference answer
+        
+    Returns:
+        F1 score between 0 and 1
+    """
     pred_tokens = normalize_text(pred).split()
     gold_tokens = normalize_text(gold).split()
 
@@ -42,12 +64,27 @@ def compute_f1(pred, gold):
 
 class RAGGenerator:
     def __init__(self, model_name="google/flan-t5-base", device=None):
+        """Initialize RAGGenerator.
+        
+        Args:
+            model_name: Model ID from HuggingFace
+            device: Device to run on (auto-detects GPU if available)
+        """
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
 
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to(self.device)
 
     def build_prompt(self, question, contexts):
+        """Build prompt from question and context.
+        
+        Args:
+            question: User question
+            contexts: List of context texts
+            
+        Returns:
+            Formatted prompt string
+        """
         context_text = "\n\n".join(contexts)
 
         prompt = (
@@ -59,6 +96,16 @@ class RAGGenerator:
         return prompt
 
     def generate(self, question, contexts, max_new_tokens=128):
+        """Generate answer from question and contexts.
+        
+        Args:
+            question: User question
+            contexts: List of context texts
+            max_new_tokens: Maximum tokens to generate
+            
+        Returns:
+            Generated answer text
+        """
         prompt = self.build_prompt(question, contexts)
 
         inputs = self.tokenizer(

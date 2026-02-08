@@ -1,3 +1,8 @@
+"""Dense retrieval using FAISS indexes and sentence transformers.
+
+Performs semantic retrieval by embedding queries and matching against
+a pre-built FAISS index of document embeddings.
+"""
 import json
 import argparse
 import faiss
@@ -7,6 +12,14 @@ from sentence_transformers import SentenceTransformer
 
 class DenseRetriever:
     def __init__(self, index_path: str, metadata_path: str, model_name: str, device: str = "cpu"):
+        """Initialize DenseRetriever.
+        
+        Args:
+            index_path: Path to FAISS index file
+            metadata_path: Path to chunk metadata JSON
+            model_name: Sentence transformer model name
+            device: Device to run embeddings on ('cpu' or 'cuda')
+        """
         # Load embedding model
         self.model = SentenceTransformer(model_name, device=device)
 
@@ -18,6 +31,14 @@ class DenseRetriever:
             self.metadata = json.load(f)
 
     def embed_query(self, query: str) -> np.ndarray:
+        """Embed query string to normalized vector.
+        
+        Args:
+            query: Query text
+            
+        Returns:
+            2D numpy array of shape (1, embedding_dim)
+        """
         embedding = self.model.encode(
             query,
             convert_to_numpy=True,
@@ -26,6 +47,15 @@ class DenseRetriever:
         return embedding.reshape(1, -1)
 
     def retrieve(self, query: str, top_k: int = 5) -> list:
+        """Retrieve top-k documents for query.
+        
+        Args:
+            query: Query text
+            top_k: Number of documents to retrieve
+            
+        Returns:
+            List of dicts with keys: score, chunk_id, doc_id, text, metadata
+        """
         query_embedding = self.embed_query(query)
 
         scores, indices = self.index.search(query_embedding, top_k)
@@ -48,6 +78,7 @@ class DenseRetriever:
 
 
 def main():
+    """CLI for dense retrieval."""
     parser = argparse.ArgumentParser(description="Dense Retriever CLI")
 
     parser.add_argument("--question", required=True, help="Query question")
