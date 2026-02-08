@@ -181,43 +181,10 @@ python -m src.generation.generator \
 ---
 
 ### 5. Troubleshooting
-For specific questions, contact me here: atharvdxb14@gmail.com
-**Import errors (ModuleNotFoundError):**
+Always run commands from project root. 
 
-Always run from the project root as a module:
-```bash
-python -m src.evaluation.run_evaluation ...
-```
 
-Alternatively, set `PYTHONPATH`:
-```bash
-# Linux/macOS/WSL:
-PYTHONPATH=. python src/evaluation/run_evaluation.py ...
-
-# Windows CMD:
-set PYTHONPATH=. && python src/evaluation/run_evaluation.py ...
-```
-
-**FAISS installation issues on Windows:**
-
-If `pip install faiss-cpu` fails, try:
-```bash
-pip install faiss-cpu-no-avx2
-```
-
-Or use WSL (Windows Subsystem for Linux).
-
-**GPU support:**
-Please note: I've not used GPU, hence this functionality is not tested yet.
-To use GPU (CUDA), install GPU versions of dependencies:
-```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install faiss-gpu
-```
-
-Then pass `--device cuda` to commands.
-
----
+For specific questions, contact me here: atharvdxb14@gmail.com. 
 
 ## Answers to Assignment Questions
 
@@ -248,8 +215,6 @@ Based on this distribution, configurable chunking was implemented with multiple 
 #### Failure modes observed
 - Some long answers were still split across chunks, causing partial context retrieval.
 - Overlap sometimes produced near-duplicate chunks in the top-k results.
-- Larger chunk sizes increased retrieval noise, which slightly reduced generation quality.
-
 ---
 
 ### 2. Embeddings: why did one embedding model win or lose?
