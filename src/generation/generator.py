@@ -63,8 +63,8 @@ def build_prompt(system_prompt, context_chunks, question):
         f"Question: {question}\n"
         f"Answer:"
     )
-    print("\n[Debug] Built prompt:\n")
-    print(prompt)
+    # print("\n[Debug] Built prompt:\n")
+    # print(prompt)
     return prompt
 
 
@@ -112,8 +112,8 @@ def main():
     generator = RAGGenerator(model_name=args.generation_model, device=args.device)
     answer = generator.generate(prompt)
 
-    print("\nGenerated Answer:\n")
-    print(answer)
+    # print("\nGenerated Answer:\n")
+    # print(answer)
 
 
 if __name__ == "__main__":

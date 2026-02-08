@@ -78,5 +78,725 @@
     "answer": "What causes aquagenic pruritus? The exact cause of aquagenic pruritus is unknown, but increased mast cell degranulation (release of granules rich in histamine and other compounds into the body by mast cells, a special type of cell that plays a role in the immune system), increased circulating histamine, release of acetylcholine (a chemical in the body which sends signals from nerves to muscles and between nerves in the brain), and increased skin fibrinolytic activity (activity that controls clot size by promoting the breakdown of clots) have all been named as possible causes of the condition. In some cases, it appears to be a symptom of polycythemia vera.",
     "source": "GARD",
     "url": "https://rarediseases.info.nih.gov/gard/10278/aquagenic-pruritus"
+  },
+  {
+    "qa_id": "GARD_0000335_2",
+    "doc_id": "GARD_0000335",
+    "question": "What are the symptoms of Andersen-Tawil syndrome ?",
+    "answer": "What are the signs and symptoms of Andersen-Tawil syndrome? Anderson-Tawil syndrome causes episodes of muscle weakness (periodic paralysis), changes in heart rhythm (arrhythmia), and developmental abnormalities. The most common changes affecting the heart are ventricular arrhythmia, which is a disruption in the rhythm of the heart's lower chambers, and long QT syndrome. Long QT syndrome is a heart condition that causes the heart muscle to take longer than usual to recharge between beats. If untreated, the irregular heartbeats can lead to discomfort, fainting, or cardiac arrest. Physical abnormalities associated with Andersen-Tawil syndrome typically affect the head, face, and limbs. These features often include a very small lower jaw (micrognathia), dental abnormalities, low-set ears, widely spaced eyes, and unusual curving of the fingers or toes (clinodactyly). Some affected people also have short stature and an abnormal curvature of the spine (scoliosis). The Human Phenotype Ontology provides the following list of signs and symptoms for Andersen-Tawil syndrome. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Specific learning disability 7.5% Antegonial notching of mandible - Autosomal dominant inheritance - Bidirectional ventricular ectopy - Blepharophimosis - Brachydactyly syndrome - Broad forehead - Bulbous nose - Cleft palate - Clinodactyly of the 5th finger - Clinodactyly of the 5th toe - Delayed eruption of permanent teeth - Delayed skeletal maturation - Facial asymmetry - Growth abnormality - High palate - Hypertelorism - Hypoplasia of dental enamel - Hypoplasia of the maxilla - Joint laxity - Low-set ears - Malar flattening - Microcephaly - Oligodontia - Palpitations - Periodic hypokalemic paresis - Persistence of primary teeth - Preauricular pit - Prolonged QT interval - Prominent frontal sinuses - Scapular winging - Scoliosis - Short foot - Short mandibular rami - Short metacarpal - Short metatarsal - Short palm - Short palpebral fissure - Short phalanx of finger - Slender long bone - Small hand - Syncope - Toe syndactyly - Triangular face - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/9453/andersen-tawil-syndrome"
+  },
+  {
+    "qa_id": "GARD_0002962_2",
+    "doc_id": "GARD_0002962",
+    "question": "What are the symptoms of Hydrocephalus due to congenital stenosis of aqueduct of sylvius ?",
+    "answer": "What are the signs and symptoms of Hydrocephalus due to congenital stenosis of aqueduct of sylvius? Males with hydrocephalus due to congenital stenosis of aqueduct of sylvius (HSAS) are typically born with severe hydrocephalus and adducted thumbs (bent towards the palm). Other signs and symptoms may include: Seizures Severe intellectual disability Spasticity Of note, HSAS is one form of L1 syndrome, which is an inherited condition that primarily affects the nervous system. Other forms include MASA syndrome, X-linked complicated hereditary spastic paraplegia type 1, and X-linked complicated corpus callosum agenesis. All of the different forms of L1 syndrome may be observed in affected people within the same family. GeneReviews offers more specific information about the signs and symptoms associated with each form of L1 syndrome. Please click on the link to access this resource. The Human Phenotype Ontology provides the following list of signs and symptoms for Hydrocephalus due to congenital stenosis of aqueduct of sylvius. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Aqueductal stenosis 90% Cognitive impairment 90% Hemiplegia/hemiparesis 90% Hydrocephalus 90% Increased intracranial pressure 90% Adducted thumb 50% Coarse facial features 7.5% Holoprosencephaly 7.5% Limitation of joint mobility 7.5% Nystagmus 7.5% Seizures 7.5% Strabismus 7.5% Absent septum pellucidum - Agenesis of corpus callosum - Corticospinal tract hypoplasia - Intellectual disability - Macrocephaly - Spastic paraplegia - Spasticity - X-linked recessive inheritance - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/434/hydrocephalus-due-to-congenital-stenosis-of-aqueduct-of-sylvius"
+  },
+  {
+    "qa_id": "GHR_0000214_2",
+    "doc_id": "GHR_0000214",
+    "question": "How many people are affected by congenital afibrinogenemia ?",
+    "answer": "Congenital afibrinogenemia is a rare condition that occurs in approximately 1 in 1 million newborns.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/congenital-afibrinogenemia"
+  },
+  {
+    "qa_id": "GHR_0000310_1",
+    "doc_id": "GHR_0000310",
+    "question": "What is (are) dystrophic epidermolysis bullosa ?",
+    "answer": "Epidermolysis bullosa is a group of genetic conditions that cause the skin to be very fragile and to blister easily. Blisters and skin erosions form in response to minor injury or friction, such as rubbing or scratching. Dystrophic epidermolysis bullosa (DEB) is one of the major forms of epidermolysis bullosa. The signs and symptoms of this condition vary widely among affected individuals. In mild cases, blistering may primarily affect the hands, feet, knees, and elbows. Severe cases of this condition involve widespread blistering that can lead to vision loss, disfigurement, and other serious medical problems. Researchers classify dystrophic epidermolysis bullosa into three major types. Although the types differ in severity, their features overlap significantly and they are caused by mutations in the same gene. Autosomal recessive dystrophic epidermolysis bullosa, Hallopeau-Siemens type (RDEB-HS) is the most severe, classic form of the condition. Affected infants are typically born with widespread blistering and areas of missing skin, often caused by trauma during birth. Most often, blisters are present over the whole body and affect mucous membranes such as the moist lining of the mouth and digestive tract. As the blisters heal, they result in severe scarring. Scarring in the mouth and esophagus can make it difficult to chew and swallow food, leading to chronic malnutrition and slow growth. Additional complications of progressive scarring can include fusion of the fingers and toes, loss of fingernails and toenails, joint deformities (contractures) that restrict movement, and eye inflammation leading to vision loss. Additionally, young adults with the classic form of dystrophic epidermolysis bullosa have a very high risk of developing a form of skin cancer called squamous cell carcinoma, which tends to be unusually aggressive and is often life-threatening. A second type of autosomal recessive dystrophic epidermolysis bullosa is known as the non-Hallopeau-Siemens type (non-HS RDEB). This form of the condition is somewhat less severe than the classic type and includes a range of subtypes. Blistering is limited to the hands, feet, knees, and elbows in mild cases, but may be widespread in more severe cases. Affected people often have malformed fingernails and toenails. Non-HS RDEB involves scarring in the areas where blisters occur, but this form of the condition does not cause the severe scarring characteristic of the classic type. The third major type of dystrophic epidermolysis bullosa is known as the autosomal dominant type (DDEB). The signs and symptoms of this condition tend to be milder than those of the autosomal recessive forms, with blistering often limited to the hands, feet, knees, and elbows. The blisters heal with scarring, but it is less severe. Most affected people have malformed fingernails and toenails, and the nails may be lost over time. In the mildest cases, abnormal nails are the only sign of the condition.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/dystrophic-epidermolysis-bullosa"
+  },
+  {
+    "qa_id": "GARD_0000183_3",
+    "doc_id": "GARD_0000183",
+    "question": "What causes Agenesis of the dorsal pancreas ?",
+    "answer": "What causes agenesis of the dorsal pancreas? Partial or complete agenesis of the dorsal pancreas results from the failure of the dorsal pancreatic bud to form the body and tail of the pancreas in the developing fetus. It may occur from the absence, or regression of, the dorsal bud during fetal development. Heredity may play a role in the development of this condition, but further research is needed to clarify this. There have been reports in the literature of the condition being associated (rarely) with other congenital diseases, specifically a very rare disorder called polysplenia/heterotaxy syndrome. In this case, it may occur due to errors in development of the asymmetric organs and may be associated with benign to severe congenital cardiac (heart) malformations.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/4203/agenesis-of-the-dorsal-pancreas"
+  },
+  {
+    "qa_id": "GHR_0000081_3",
+    "doc_id": "GHR_0000081",
+    "question": "What are the genetic changes related to atelosteogenesis type 1 ?",
+    "answer": "Mutations in the FLNB gene cause atelosteogenesis type 1. The FLNB gene provides instructions for making a protein called filamin B. This protein helps build the network of protein filaments (cytoskeleton) that gives structure to cells and allows them to change shape and move. Filamin B attaches (binds) to another protein called actin and helps the actin to form the branching network of filaments that makes up the cytoskeleton. Filamin B also links actin to many other proteins to perform various functions within the cell, including the cell signaling that helps determine how the cytoskeleton will change as tissues grow and take shape during development. Filamin B is especially important in the development of the skeleton before birth. It is active (expressed) in the cell membranes of cartilage-forming cells (chondrocytes). Cartilage is a tough, flexible tissue that makes up much of the skeleton during early development. Most cartilage is later converted to bone, a process called ossification, except for the cartilage that continues to cover and protect the ends of bones and is present in the nose, airways (trachea and bronchi), and external ears. Filamin B appears to be important for normal cell growth and division (proliferation) and maturation (differentiation) of chondrocytes and for the ossification of cartilage. FLNB gene mutations that cause atelosteogenesis type 1 change single protein building blocks (amino acids) in the filamin B protein or delete a small section of the protein sequence, resulting in an abnormal protein. This abnormal protein appears to have a new, atypical function that interferes with the proliferation or differentiation of chondrocytes, impairing ossification and leading to the signs and symptoms of atelosteogenesis type 1.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/atelosteogenesis-type-1"
+  },
+  {
+    "qa_id": "NINDS_0000008_2",
+    "doc_id": "NINDS_0000008",
+    "question": "What are the treatments for Adrenoleukodystrophy ?",
+    "answer": "Adrenal function must be tested periodically in all patients with ALD. Treatment with adrenal hormones can be lifesaving. Symptomatic and supportive treatments for ALD include physical therapy, psychological support, and special education. Recent evidence suggests that a mixture of oleic acid and erucic acid, known as \"Lorenzo's Oil,\" administered to boys with X-ALD prior to symptom onset can prevent or delay the appearance of the childhood cerebral form It is not known whether Lorenzo's Oil will have any beneficial effects in AMN. Furthermore, Lorenzo's Oil has no beneficial effect in symptomatic boys with X-ALD. Bone marrow transplantations can provide long-term benefit to boys who have early evidence of the childhood cerebral form of X-ALD, but the procedure carries risk of mortality and morbidity and is not recommended for those whose symptoms are already severe or who have the adult-onset or neonatal forms.",
+    "source": "NINDS",
+    "url": "http://www.ninds.nih.gov/disorders/adrenoleukodystrophy/adrenoleukodystrophy.htm"
+  },
+  {
+    "qa_id": "GHR_0000228_1",
+    "doc_id": "GHR_0000228",
+    "question": "What is (are) congenital hepatic fibrosis ?",
+    "answer": "Congenital hepatic fibrosis is a disease of the liver that is present from birth. The liver has many important functions, including producing various molecules needed by the body and breaking down other molecules so that their components can be used or eliminated. Congenital hepatic fibrosis is characterized by malformation of the bile ducts and of the blood vessels of the hepatic portal system. Bile ducts carry bile (a fluid that helps to digest fats) from the liver to the gallbladder and small intestine. The hepatic portal system is a branching network of veins (portal veins) that carry blood from the gastrointestinal tract to the liver for processing. A buildup of scar tissue (fibrosis) in the portal tracts also occurs in this disorder. Portal tracts are structures in the liver that bundle the vessels through which blood, lymph, and bile flow, and fibrosis in the portal tracts can restrict the normal movement of fluids in these vessels. Lymph is a fluid that helps exchange immune cells, proteins, and other substances between the blood and tissues. Constriction of the portal veins due to malformation and portal tract fibrosis results in high blood pressure in the hepatic portal system (portal hypertension). Portal hypertension impairs the flow of blood from the gastrointestinal tract, causing an increase in pressure in the veins of the esophagus, stomach, and intestines. These veins may stretch and their walls may become thin, leading to a risk of abnormal bleeding. People with congenital hepatic fibrosis have an enlarged liver and spleen (hepatosplenomegaly). The liver is abnormally shaped. Affected individuals also have an increased risk of infection of the bile ducts (cholangitis), hard deposits in the gallbladder or bile ducts (gallstones), and cancer of the liver or gallbladder. Congenital hepatic fibrosis may occur alone, in which case it is called isolated congenital hepatic fibrosis. More frequently, it occurs as a feature of genetic syndromes that also affect the kidneys (the renal system), such as polycystic kidney disease (PKD).",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/congenital-hepatic-fibrosis"
+  },
+  {
+    "qa_id": "NINDS_0000255_3",
+    "doc_id": "NINDS_0000255",
+    "question": "What is the outlook for Spasticity ?",
+    "answer": "The prognosis for those with spasticity depends on the severity of the spasticity and the associated disorder(s).",
+    "source": "NINDS",
+    "url": "http://www.ninds.nih.gov/disorders/spasticity/spasticity.htm"
+  },
+  {
+    "qa_id": "GHR_0000610_3",
+    "doc_id": "GHR_0000610",
+    "question": "What are the genetic changes related to lymphedema-distichiasis syndrome ?",
+    "answer": "Lymphedema-distichiasis syndrome is caused by mutations in the FOXC2 gene. The FOXC2 gene provides instructions for making a protein that plays a critical role in the formation of many organs and tissues before birth. The FOXC2 protein is a transcription factor, which means that it attaches (binds) to specific regions of DNA and helps control the activity of many other genes. Researchers believe that the FOXC2 protein has a role in a variety of developmental processes, such as the formation of veins and the development of the lungs, eyes, kidneys and urinary tract, cardiovascular system, and the transport system for immune cells (lymphatic vessels).",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/lymphedema-distichiasis-syndrome"
+  },
+  {
+    "qa_id": "CancerGov_0000006_8_7",
+    "doc_id": "CancerGov_0000006_8",
+    "question": "what research (or clinical trials) is being done for Childhood Craniopharyngioma ?",
+    "answer": "Patients may want to think about taking part in a clinical trial. For some patients, taking part in a clinical trial may be the best treatment choice. Clinical trials are part of the medical research process. Clinical trials are done to find out if new treatments are safe and effective or better than the standard treatment. Many of today's standard treatments are based on earlier clinical trials. Patients who take part in a clinical trial may receive the standard treatment or be among the first to receive a new treatment. Patients who take part in clinical trials also help improve the way diseases will be treated in the future. Even when clinical trials do not lead to effective new treatments, they often answer important questions and help move research forward. Check the list of NCI-supported cancer clinical trials that are now accepting patients with childhood craniopharyngioma. For more specific results, refine the search by using other search features, such as the location of the trial, the type of treatment, or the name of the drug. Talk with your child's doctor about clinical trials that may be right for your child. General information about clinical trials is available from the NCI website. Patients can enter clinical trials before, during, or after starting their treatment. Some clinical trials only include patients who have not yet received treatment. Other trials test treatments for patients who have not improved. There are also clinical trials that test new ways to stop a disease from recurring (coming back) or reduce the side effects of treatment. Clinical trials are taking place in many parts of the country. See the Treatment Options section that follows for links to current treatment clinical trials. These have been retrieved from NCI's clinical trials database.",
+    "source": "CancerGov",
+    "url": "https://www.cancer.gov/types/brain/patient/child-cranio-treatment-pdq"
+  },
+  {
+    "qa_id": "GARD_0005502_1",
+    "doc_id": "GARD_0005502",
+    "question": "What is (are) Schnitzler syndrome ?",
+    "answer": "Schnitzler syndrome is a rare autoinflammatory condition. Signs and symptoms of the condition vary but may include urticaria; recurrent fevers; joint pain and inflammation; organomegaly (abnormally enlarged organs); and/or blood abnormalities. The exact underlying cause of the condition is unknown; however, most cases occur sporadically in people with no family history of the condition. Treatment is focused on alleviating the signs and symptoms associated with the condition and may include various medications and/or phototherapy.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/12390/schnitzler-syndrome"
+  },
+  {
+    "qa_id": "NINDS_0000034_4",
+    "doc_id": "NINDS_0000034",
+    "question": "what research (or clinical trials) is being done for Atrial Fibrillation and Stroke ?",
+    "answer": "The National Institute of Neurological Disorders and Stroke (NINDS) is the leading Federal agency directing and funding research relevant to AF and stroke prevention. The NINDS conducts basic and clinical research in its laboratories and clinics at the National Institutes of Health (NIH), and also supports additional research through grants to major research institutions across the country. Much of this research focuses on finding better ways to prevent, treat, and ultimately cure disorders such as AF that can increase the risk of stroke.",
+    "source": "NINDS",
+    "url": "http://www.ninds.nih.gov/disorders/atrial_fibrillation_and_stroke/atrial_fibrillation_and_stroke.htm"
+  },
+  {
+    "qa_id": "GHR_0001021_2",
+    "doc_id": "GHR_0001021",
+    "question": "How many people are affected by von Willebrand disease ?",
+    "answer": "Von Willebrand disease is estimated to affect 1 in 100 to 10,000 individuals. Because people with mild signs and symptoms may not come to medical attention, it is thought that this condition is underdiagnosed. Most researchers agree that von Willebrand disease is the most common genetic bleeding disorder.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/von-willebrand-disease"
+  },
+  {
+    "qa_id": "GHR_0000608_3",
+    "doc_id": "GHR_0000608",
+    "question": "What are the genetic changes related to lung cancer ?",
+    "answer": "Cancers occur when genetic mutations build up in critical genes, specifically those that control cell growth and division or the repair of damaged DNA. These changes allow cells to grow and divide uncontrollably to form a tumor. In nearly all cases of lung cancer, these genetic changes are acquired during a person's lifetime and are present only in certain cells in the lung. These changes, which are called somatic mutations, are not inherited. Somatic mutations in many different genes have been found in lung cancer cells. Mutations in the EGFR and KRAS genes are estimated to be present in up to half of all lung cancer cases. These genes each provide instructions for making a protein that is embedded within the cell membrane. When these proteins are turned on (activated) by binding to other molecules, signaling pathways are triggered within cells that promote cell growth and division (proliferation). Mutations in either the EGFR or KRAS gene lead to the production of a protein that is constantly turned on (constitutively activated). As a result, cells are signaled to constantly proliferate, leading to tumor formation. When these gene changes occur in cells in the lungs, lung cancer develops. Mutations in many other genes have each been found in a small proportion of cases. In addition to genetic changes, researchers have identified many personal and environmental factors that expose individuals to cancer-causing compounds (carcinogens) and increase the rate at which somatic mutations occur, contributing to a person's risk of developing lung cancer. The greatest risk factor is long-term tobacco smoking, which increases a person's risk of developing lung cancer 20-fold. Other risk factors include exposure to air pollution, radon, asbestos, or secondhand smoke; long-term use of hormone replacement therapy for menopause; and a history of lung disease such as tuberculosis, emphysema, or chronic bronchitis. A history of lung cancer in closely related family members is also an important risk factor; however, because relatives with lung cancer were likely smokers, it is unclear whether the increased risk of lung cancer is the result of genetic factors or exposure to secondhand smoke.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/lung-cancer"
+  },
+  {
+    "qa_id": "GARD_0005300_5",
+    "doc_id": "GARD_0005300",
+    "question": "How to diagnose Renal oncocytoma ?",
+    "answer": "How is renal oncocytoma diagnosed? A diagnosis of renal oncocytoma is often suspected based on imaging studies such as computed tomography (CT scan) and/or magnetic resonance imaging (MRI scan). However, it can be difficult to differentiate a renal oncocytoma from renal cell carcinoma based on imaging studies alone. Although researchers are currently studying several new techniques for the diagnosis of renal oncocytoma, a biopsy and surgery are typically necessary to confirm the diagnosis. Is genetic testing available for renal oncocytoma? Genetic testing is not available for many people with renal oncocytoma since most of these tumors occur sporadically (by chance) and are not caused by a genetic mutation. However, genetic testing is an option for people with an inherited condition that predisposes to renal oncocytoma such as tuberous sclerosis complex and Birt-Hogg-Dube syndrome. Carrier testing for at-risk relatives and prenatal testing are possible if the disease-causing mutation in the family is known. The Genetic Testing Registry (GTR) is a centralized online resource for information about genetic tests. It provides a list of laboratories performing genetic testing for tuberous sclerosis complex and Birt-Hogg-Dube syndrome. The intended audience for the GTR is health care providers and researchers. Patients and consumers with specific questions about a genetic test should contact a health care provider or a genetics professional.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/8477/renal-oncocytoma"
+  },
+  {
+    "qa_id": "GHR_0000190_3",
+    "doc_id": "GHR_0000190",
+    "question": "What are the genetic changes related to cleidocranial dysplasia ?",
+    "answer": "The RUNX2 gene provides instructions for making a protein that is involved in bone and cartilage development and maintenance. This protein is a transcription factor, which means it attaches (binds) to specific regions of DNA and helps control the activity of particular genes. Researchers believe that the RUNX2 protein acts as a \"master switch,\" regulating a number of other genes involved in the development of cells that build bones (osteoblasts). Some mutations change one protein building block (amino acid) in the RUNX2 protein. Other mutations introduce a premature stop signal that results in an abnormally short protein. Occasionally, the entire gene is missing. These genetic changes reduce or eliminate the activity of the protein produced from one copy of the RUNX2 gene in each cell, decreasing the total amount of functional RUNX2 protein. This shortage of functional RUNX2 protein interferes with normal bone and cartilage development, resulting in the signs and symptoms of cleidocranial dysplasia. In rare cases, affected individuals may experience additional, unusual symptoms resulting from the loss of other genes near RUNX2. In about one-third of individuals with cleidocranial dysplasia, no mutation in the RUNX2 gene has been found. The cause of the condition in these individuals is unknown.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/cleidocranial-dysplasia"
+  },
+  {
+    "qa_id": "GHR_0000997_2",
+    "doc_id": "GHR_0000997",
+    "question": "How many people are affected by trisomy 18 ?",
+    "answer": "Trisomy 18 occurs in about 1 in 5,000 live-born infants; it is more common in pregnancy, but many affected fetuses do not survive to term. Although women of all ages can have a child with trisomy 18, the chance of having a child with this condition increases as a woman gets older.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/trisomy-18"
+  },
+  {
+    "qa_id": "GARD_0003325_3",
+    "doc_id": "GARD_0003325",
+    "question": "Is Juvenile myoclonic epilepsy inherited ?",
+    "answer": "Is juvenile myoclonic epilepsy inherited? If I have juvenile myoclonic epilepsy, will my children also have it? Juvenile myoclonic epilepsy is an inherited disorder (about a third of patients with this condition have a positive family history of epilepsy), but the exact mode of inheritance is not clear. A number of studies have indicated that juvenile myoclonic epilepsy is an autosomal dominant condition (i.e. 50% risk of inheritance). However, it exhibits incomplete penetrance, which means that some individuals who inherit the juvenile myoclonic epilepsy gene or genes do not express clinical juvenile myoclonic epilepsy. The children of these individuals who have the gene but do not exhibit symptoms may still inherit the genes and express clinically observable disease. Due to the complex nature of inheritance with this condition, you may benefit from consulting with a genetics professional. This type of healthcare provider can provide you with additional information about diagnosis, natural history, treatment, mode of inheritance, and genetic risks to other family members. To find a genetics clinic, we recommend that you contact your primary doctor for a referral. Click here to learn more about genetic consultations.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/6808/juvenile-myoclonic-epilepsy"
+  },
+  {
+    "qa_id": "GARD_0002924_1",
+    "doc_id": "GARD_0002924",
+    "question": "What is (are) Horizontal gaze palsy with progressive scoliosis ?",
+    "answer": "Horizontal gaze palsy with progressive scoliosis (HGPPS) is a rare disorder that affects vision and also causes an abnormal curvature of the spine (scoliosis). People with this condition are unable to move their eyes side-to-side (horizontally) and must turn their head instead of moving their eyes to track moving objects. Scoliosis develops in infancy or childhood and worsens over time. Scoliosis can be painful and may interfere with movement so it is often treated with surgery early in life. HGPPS is caused by changes (mutations) in the ROBO3 gene and is inherited in an autosomal recessive manner. Treatment is based on the signs and symptoms present in each person.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/12682/horizontal-gaze-palsy-with-progressive-scoliosis"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000902_1",
+    "doc_id": "MPlusHealthTopics_0000902",
+    "question": "Do you have information about Tonsils and Adenoids",
+    "answer": "Summary : Your tonsils and adenoids are part of your lymphatic system. Your tonsils are in the back of your throat. Your adenoids are higher up, behind your nose. Both help protect you from infection by trapping germs coming in through your mouth and nose. Sometimes your tonsils and adenoids become infected. Tonsillitis makes your tonsils sore and swollen and causes a sore throat. Enlarged adenoids can be sore, make it hard to breathe and cause ear problems. The first treatment for infected tonsils and adenoids is antibiotics. If you have frequent infections or trouble breathing, you may need surgery. Surgery to remove the tonsils is tonsillectomy. Surgery to remove adenoids is adenoidectomy.",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/tonsilsandadenoids.html"
+  },
+  {
+    "qa_id": "GARD_0003094_1",
+    "doc_id": "GARD_0003094",
+    "question": "What are the symptoms of Hypothalamic hamartomas ?",
+    "answer": "What are the signs and symptoms of Hypothalamic hamartomas? The Human Phenotype Ontology provides the following list of signs and symptoms for Hypothalamic hamartomas. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Death in infancy 50% Abnormality of cardiovascular system morphology - Anterior hypopituitarism - Autosomal recessive inheritance - Cleft palate - Depressed nasal bridge - Glioma - Hip dislocation - Hydrocephalus - Hypothalamic hamartoma - Macrocephaly - Median cleft lip - Microglossia - Micromelia - Micropenis - Occipital encephalocele - Postaxial hand polydactyly - Pulmonary hypoplasia - Renal dysplasia - Short nose - Short ribs - Skeletal dysplasia - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/2934/hypothalamic-hamartomas"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000216_1",
+    "doc_id": "MPlusHealthTopics_0000216",
+    "question": "Do you have information about College Health",
+    "answer": "Summary : College life involves excitement, along with new challenges, risks, and responsibilities. You are meeting new people, learning new things, and making your own decisions. It can sometimes be stressful. You have to deal with pressures related to food, drink, appearance, drugs, and sexual activity. There are steps you can take to stay healthy and safe while you're in college: - Eat a balanced diet - Get enough sleep - Get regular physical activity - Maintain your health with checkups and vaccinations - If you decide to have sex, practice safe sex - Make smart choices about alcohol and drugs - Get help if you are stressed or depressed Centers for Disease Control and Prevention",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/collegehealth.html"
+  },
+  {
+    "qa_id": "GHR_0001045_3",
+    "doc_id": "GHR_0001045",
+    "question": "What are the genetic changes related to X-linked adrenoleukodystrophy ?",
+    "answer": "Mutations in the ABCD1 gene cause X-linked adrenoleukodystrophy. The ABCD1 gene provides instructions for producing the adrenoleukodystrophy protein (ALDP), which is involved in transporting certain fat molecules called very long-chain fatty acids (VLCFAs) into peroxisomes. Peroxisomes are small sacs within cells that process many types of molecules, including VLCFAs. ABCD1 gene mutations result in a shortage (deficiency) of ALDP. When this protein is lacking, the transport and subsequent breakdown of VLCFAs is disrupted, causing abnormally high levels of these fats in the body. The accumulation of VLCFAs may be toxic to the adrenal cortex and myelin. Research suggests that the accumulation of VLCFAs triggers an inflammatory response in the brain, which could lead to the breakdown of myelin. The destruction of these tissues leads to the signs and symptoms of X-linked adrenoleukodystrophy.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/x-linked-adrenoleukodystrophy"
+  },
+  {
+    "qa_id": "GHR_0000518_5",
+    "doc_id": "GHR_0000518",
+    "question": "What are the treatments for infantile neuroaxonal dystrophy ?",
+    "answer": "These resources address the diagnosis or management of infantile neuroaxonal dystrophy: - Gene Review: Gene Review: PLA2G6-Associated Neurodegeneration - Genetic Testing Registry: Infantile neuroaxonal dystrophy These resources from MedlinePlus offer information about the diagnosis and management of various health conditions: - Diagnostic Tests - Drug Therapy - Surgery and Rehabilitation - Genetic Counseling - Palliative Care",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/infantile-neuroaxonal-dystrophy"
+  },
+  {
+    "qa_id": "GARD_0000963_2",
+    "doc_id": "GARD_0000963",
+    "question": "What are the symptoms of Carney complex ?",
+    "answer": "What are the signs and symptoms of Carney complex? The Human Phenotype Ontology provides the following list of signs and symptoms for Carney complex. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Abnormal pigmentation of the oral mucosa 90% Growth hormone excess 90% Gynecomastia 90% Hypercortisolism 90% Melanocytic nevus 90% Neoplasm of the adrenal gland 90% Neoplasm of the heart 90% Neoplasm of the skin 90% Neoplasm of the thyroid gland 90% Testicular neoplasm 90% Abnormality of adipose tissue 50% Abnormality of temperature regulation 50% Arthralgia 50% Behavioral abnormality 50% Broad foot 50% Cerebral ischemia 50% Coarse facial features 50% Congestive heart failure 50% Hypertension 50% Hypertrichosis 50% Joint swelling 50% Kyphosis 50% Large hands 50% Neoplasm of the breast 50% Osteoarthritis 50% Reduced bone mineral density 50% Round face 50% Skeletal muscle atrophy 50% Thin skin 50% Truncal obesity 50% Type II diabetes mellitus 50% Anemia 7.5% Cognitive impairment 7.5% Cryptorchidism 7.5% Mitral stenosis 7.5% Neoplasm of the nervous system 7.5% Ovarian neoplasm 7.5% Precocious puberty 7.5% Striae distensae 7.5% Sudden cardiac death 7.5% Tall stature 7.5% Weight loss 7.5% Abnormality of the eye - Autosomal dominant inheritance - Freckling - Hirsutism - Myxoid subcutaneous tumors - Nevus - Pheochromocytoma - Pituitary adenoma - Profuse pigmented skin lesions - Red hair - Schwannoma - Thyroid carcinoma - Thyroid follicular hyperplasia - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/1119/carney-complex"
+  },
+  {
+    "qa_id": "NIHSeniorHealth_0000017_14",
+    "doc_id": "NIHSeniorHealth_0000017",
+    "question": "What are the symptoms of Dry Eye ?",
+    "answer": "Dry eye symptoms may include any of the following. - stinging or burning of the eye - a sandy or gritty feeling as if something is in the eye - episodes of excess tears following very dry eye periods - a stringy discharge from the eye - pain and redness of the eye - episodes of blurred vision - heavy eyelids - inability to cry when emotionally stressed - uncomfortable contact lenses - decreased ability to read, work on the computer, or do any activity that requires you to use your eyes for long periods of time - eye fatigue. stinging or burning of the eye a sandy or gritty feeling as if something is in the eye episodes of excess tears following very dry eye periods a stringy discharge from the eye pain and redness of the eye episodes of blurred vision heavy eyelids inability to cry when emotionally stressed uncomfortable contact lenses decreased ability to read, work on the computer, or do any activity that requires you to use your eyes for long periods of time eye fatigue. If you have symptoms that you think could result from dry eye, consult an eye care professional to get an accurate diagnosis of the condition and begin treatment.",
+    "source": "NIHSeniorHealth",
+    "url": "http://nihseniorhealth.gov/dryeye/toc.html"
+  },
+  {
+    "qa_id": "GARD_0004177_3",
+    "doc_id": "GARD_0004177",
+    "question": "What causes Multifocal choroiditis ?",
+    "answer": "What causes multifocal choroiditis? Multifocal choroiditis occurs spontaneously and the cause is not currently known (idiopathic). It is possible that a bacterial or viral infection may trigger an immune response that causes the inflammation seen with MFC, though more research is needed in this area.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/9824/multifocal-choroiditis"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000856_1",
+    "doc_id": "MPlusHealthTopics_0000856",
+    "question": "What is (are) Stress ?",
+    "answer": "Everyone feels stressed from time to time. Not all stress is bad. All animals have a stress response, and it can be life-saving. But chronic stress can cause both physical and mental harm. There are at least three different types of stress: - Routine stress related to the pressures of work, family, and other daily responsibilities - Stress brought about by a sudden negative change, such as losing a job, divorce, or illness - Traumatic stress, which happens when you are in danger of being seriously hurt or killed. Examples include a major accident, war, assault, or a natural disaster. This type of stress can cause post-traumatic stress disorder (PTSD). Different people may feel stress in different ways. Some people experience digestive symptoms. Others may have headaches, sleeplessness, depressed mood, anger, and irritability. People under chronic stress get more frequent and severe viral infections, such as the flu or common cold. Vaccines, such as the flu shot, are less effective for them. Some people cope with stress more effectively than others. It's important to know your limits when it comes to stress, so you can avoid more serious health effects. NIH: National Institute of Mental Health",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/stress.html"
+  },
+  {
+    "qa_id": "GARD_0002441_3",
+    "doc_id": "GARD_0002441",
+    "question": "What causes Froelich syndrome ?",
+    "answer": "What causes Froelich syndrome? Froehlich syndrome is usually caused by lesions in the hypothalamic gland or pituitary gland. The lesions may be caused by a tumor (e.g., craniopharyngioma), swelling from an infection (e.g., tuberculosis), encephalitis, or other brain injuries.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/6463/froelich-syndrome"
+  },
+  {
+    "qa_id": "GHR_0000709_4",
+    "doc_id": "GHR_0000709",
+    "question": "Is myotonia congenita inherited ?",
+    "answer": "The two forms of myotonia congenita have different patterns of inheritance. Thomsen disease is inherited in an autosomal dominant pattern, which means one copy of the altered gene in each cell is sufficient to cause the disorder. In most cases, an affected person has one parent with the condition. Becker disease is inherited in an autosomal recessive pattern, which means both copies of the gene in each cell have mutations. Most often, the parents of an individual with an autosomal recessive condition each carry one copy of the mutated gene, but do not show signs and symptoms of the condition. Because several CLCN1 mutations can cause either Becker disease or Thomsen disease, doctors usually rely on characteristic signs and symptoms to distinguish the two forms of myotonia congenita.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/myotonia-congenita"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000303_1",
+    "doc_id": "MPlusHealthTopics_0000303",
+    "question": "Do you have information about Drugs and Young People",
+    "answer": "Summary : Drug abuse is a serious public health problem. It affects almost every community and family in some way. Drug abuse in children and teenagers may pose a greater hazard than in older people. This is because their brains are not yet fully developed. As a result, the brains of young people may be more susceptible to drug abuse and addiction than adult brains. Abused drugs include - Amphetamines - Anabolic steroids - Club drugs - Cocaine - Heroin - Inhalants - Marijuana - Prescription drugs There are different types of treatment for drug abuse. But it is better to prevent drug abuse in the first place. NIH: National Institute on Drug Abuse",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/drugsandyoungpeople.html"
+  },
+  {
+    "qa_id": "GHR_0000038_3",
+    "doc_id": "GHR_0000038",
+    "question": "What are the genetic changes related to Alpers-Huttenlocher syndrome ?",
+    "answer": "Alpers-Huttenlocher syndrome is caused by mutations in the POLG gene. This gene provides instructions for making one part, the alpha subunit, of a protein called polymerase gamma (pol ). Pol functions in mitochondria, which are structures within cells that use oxygen to convert the energy from food into a form cells can use. Mitochondria each contain a small amount of DNA, known as mitochondrial DNA (mtDNA), which is essential for the normal function of these structures. Pol \"reads\" sequences of mtDNA and uses them as templates to produce new copies of mtDNA in a process called DNA replication. Most POLG gene mutations change single protein building blocks (amino acids) in the alpha subunit of pol . These changes result in a mutated pol that has a reduced ability to replicate DNA. Although the mechanism is unknown, mutations in the POLG gene often result in a reduced number of copies of mtDNA (mtDNA depletion), particularly in muscle, brain, and liver cells. MtDNA depletion causes a decrease in cellular energy, which could account for the signs and symptoms of Alpers-Huttenlocher syndrome. A mutation in the POLG gene has not been identified in approximately 13 percent of people diagnosed with Alpers-Huttenlocher syndrome. Researchers are working to identify other genes that may be responsible for the condition.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/alpers-huttenlocher-syndrome"
+  },
+  {
+    "qa_id": "GARD_0002114_2",
+    "doc_id": "GARD_0002114",
+    "question": "What are the symptoms of Eosinophilic fasciitis ?",
+    "answer": "What are the signs and symptoms of Eosinophilic fasciitis? The Human Phenotype Ontology provides the following list of signs and symptoms for Eosinophilic fasciitis. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Acrocyanosis 90% Cellulitis 90% Hypermelanotic macule 90% Muscular edema 90% Myalgia 90% Arthralgia 50% Arthritis 50% Myositis 7.5% Paresthesia 7.5% Weight loss 7.5% Autosomal recessive inheritance - Eosinophilic fasciitis - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/6351/eosinophilic-fasciitis"
+  },
+  {
+    "qa_id": "GARD_0001082_1",
+    "doc_id": "GARD_0001082",
+    "question": "What is (are) Chancroid ?",
+    "answer": "Chancroid is a bacterial infection that is spread through sexual contact. It is caused by a type of bacteria called Haemophilus ducreyi. Chancroid is characterized by a small bump on the genital which becomes a painful ulcer. Men may have just one ulcer, but women often develop four or more. About half of the people who are infected with a chancroid will develop enlarged inguinal lymph nodes, the nodes located in the fold between the leg and the lower abdomen. In some cases, the nodes will break through the skin and cause draining abscesses. The swollen lymph nodes and abscesses are often called buboes. Chancroid infections can be treated with antibiotics, including azithromycin, ceftriaxone, ciprofloxacin, and erythromycin. Large lymph node swellings need to be drained, either with a needle or local surgery.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/9522/chancroid"
+  },
+  {
+    "qa_id": "GHR_0000278_5",
+    "doc_id": "GHR_0000278",
+    "question": "What are the treatments for Denys-Drash syndrome ?",
+    "answer": "These resources address the diagnosis or management of Denys-Drash syndrome: - Gene Review: Gene Review: Wilms Tumor Overview - Genetic Testing Registry: Drash syndrome - MedlinePlus Encyclopedia: Nephrotic Syndrome These resources from MedlinePlus offer information about the diagnosis and management of various health conditions: - Diagnostic Tests - Drug Therapy - Surgery and Rehabilitation - Genetic Counseling - Palliative Care",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/denys-drash-syndrome"
+  },
+  {
+    "qa_id": "GHR_0000684_5",
+    "doc_id": "GHR_0000684",
+    "question": "What are the treatments for Muenke syndrome ?",
+    "answer": "These resources address the diagnosis or management of Muenke syndrome: - Gene Review: Gene Review: FGFR-Related Craniosynostosis Syndromes - Gene Review: Gene Review: Muenke Syndrome - Genetic Testing Registry: Muenke syndrome - MedlinePlus Encyclopedia: Craniosynostosis These resources from MedlinePlus offer information about the diagnosis and management of various health conditions: - Diagnostic Tests - Drug Therapy - Surgery and Rehabilitation - Genetic Counseling - Palliative Care",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/muenke-syndrome"
+  },
+  {
+    "qa_id": "GARD_0002478_3",
+    "doc_id": "GARD_0002478",
+    "question": "What causes Galactosialidosis ?",
+    "answer": "What causes galactosialidosis? Galactosialidosis is caused by mutations in the CTSA gene. The CTSA gene provides instructions for making a protein called cathepsin A, which is active in cellular compartments called lysosomes. These compartments contain enzymes that digest and recycle materials when they are no longer needed. Cathepsin A works together with two enzymes, neuraminidase 1 and beta-galactosidase, to form a protein complex. This complex breaks down sugar molecules (oligosaccharides) attached to certain proteins (glycoproteins) or fats (glycolipids). Cathepsin A is also found on the cell surface, where it forms a complex with neuraminidase 1 and a protein called elastin binding protein. Elastin binding protein plays a role in the formation of elastic fibers, a component of the connective tissues that form the body's supportive framework. CTSA mutations interfere with the normal function of cathepsin A. Most mutations disrupt the protein structure of cathepsin A, impairing its ability to form complexes with neuraminidase 1, beta-galactosidase, and elastin binding protein. As a result, these other enzymes are not functional, or they break down prematurely. Galactosialidosis belongs to a large family of lysosomal storage disorders, each caused by the deficiency of a specific lysosomal enzyme or protein. In galactosialidosis, impaired functioning of cathepsin A and other enzymes causes certain substances to accumulate in the lysosomes.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/3953/galactosialidosis"
+  },
+  {
+    "qa_id": "GHR_0000311_1",
+    "doc_id": "GHR_0000311",
+    "question": "What is (are) early-onset glaucoma ?",
+    "answer": "Glaucoma is a group of eye disorders in which the optic nerves connecting the eyes and the brain are progressively damaged. This damage can lead to reduction in side (peripheral) vision and eventual blindness. Other signs and symptoms may include bulging eyes, excessive tearing, and abnormal sensitivity to light (photophobia). The term \"early-onset glaucoma\" may be used when the disorder appears before the age of 40. In most people with glaucoma, the damage to the optic nerves is caused by increased pressure within the eyes (intraocular pressure). Intraocular pressure depends on a balance between fluid entering and leaving the eyes. Usually glaucoma develops in older adults, in whom the risk of developing the disorder may be affected by a variety of medical conditions including high blood pressure (hypertension) and diabetes mellitus, as well as family history. The risk of early-onset glaucoma depends mainly on heredity. Structural abnormalities that impede fluid drainage in the eye may be present at birth and usually become apparent during the first year of life. Such abnormalities may be part of a genetic disorder that affects many body systems, called a syndrome. If glaucoma appears before the age of 5 without other associated abnormalities, it is called primary congenital glaucoma. Other individuals experience early onset of primary open-angle glaucoma, the most common adult form of glaucoma. If primary open-angle glaucoma develops during childhood or early adulthood, it is called juvenile open-angle glaucoma.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/early-onset-glaucoma"
+  },
+  {
+    "qa_id": "GARD_0003292_5",
+    "doc_id": "GARD_0003292",
+    "question": "How to diagnose Jejunal atresia ?",
+    "answer": "How is jejunal atresia diagnosed? In some cases, jejunal atresia may be diagnosed before birth on a prenatal ultrasound. After birth, a diagnosis is often suspected based on the presence of characteristic signs and symptoms. Additional testing such as X-rays with or without contrast can then be ordered to confirm the diagnosis.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/6799/jejunal-atresia"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000908_1",
+    "doc_id": "MPlusHealthTopics_0000908",
+    "question": "What is (are) Tracheal Disorders ?",
+    "answer": "Your trachea, or windpipe, is one part of your airway system. Airways are pipes that carry oxygen-rich air to your lungs. They also carry carbon dioxide, a waste gas, out of your lungs. When you inhale, air travels from your nose, through your larynx, and down your windpipe. The windpipe splits into two bronchi that enter your lungs. Problems with the trachea include narrowing, inflammation, and some inherited conditions. You may need a procedure called a tracheostomy to help you breathe if you have swallowing problems, or have conditions that affect coughing or block your airways. You might also need a tracheostomy if you are in critical care and need to be on a breathing machine. NIH: National Heart, Lung, and Blood Institute",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/trachealdisorders.html"
+  },
+  {
+    "qa_id": "GHR_0000609_1",
+    "doc_id": "GHR_0000609",
+    "question": "What is (are) lymphangioleiomyomatosis ?",
+    "answer": "Lymphangioleiomyomatosis (LAM) is a condition that affects the lungs, the kidneys, and the lymphatic system. The lymphatic system consists of a network of vessels that transport lymph fluid and immune cells throughout the body. LAM is found almost exclusively in women. It usually occurs as a feature of an inherited syndrome called tuberous sclerosis complex. When LAM occurs alone it is called isolated or sporadic LAM. Signs and symptoms of LAM most often appear during a woman's thirties. Affected women have an overgrowth of abnormal smooth muscle-like cells (LAM cells) in the lungs, resulting in the formation of lung cysts and the destruction of normal lung tissue. They may also have an accumulation of fluid in the cavity around the lungs (chylothorax). The lung abnormalities resulting from LAM may cause difficulty breathing (dyspnea), chest pain, and coughing, which may bring up blood (hemoptysis). Many women with this disorder have recurrent episodes of collapsed lung (spontaneous pneumothorax). The lung problems may be progressive and, without lung transplantation, may eventually lead to limitations in activities of daily living, the need for oxygen therapy, and respiratory failure. Although LAM cells are not considered cancerous, they may spread between tissues (metastasize). As a result, the condition may recur even after lung transplantation. Women with LAM may develop cysts in the lymphatic vessels of the chest and abdomen. These cysts are called lymphangioleiomyomas. Affected women may also develop tumors called angiomyolipomas made up of LAM cells, fat cells, and blood vessels. Angiomyolipomas usually develop in the kidneys. Internal bleeding is a common complication of angiomyolipomas.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/lymphangioleiomyomatosis"
+  },
+  {
+    "qa_id": "NIHSeniorHealth_0000004_7",
+    "doc_id": "NIHSeniorHealth_0000004",
+    "question": "what research (or clinical trials) is being done for Alzheimer's Disease ?",
+    "answer": "All types of people are needed to volunteer for Alzheimers research. People with Alzheimer's disease or MCI, those with a family history of Alzheimers, and healthy people with no memory problems and no family history of Alzheimers may be able to take part in clinical trials. Participants in clinical trials help scientists learn about the brain in healthy aging and in Alzheimers. Results of these trials are used to improve prevention and treatment methods. The Alzheimers Disease Education and Referral (ADEAR) Centers clinical trials finder makes it easy for people to find out about studies that are sponsored by the federal government and private companies, universities, and other organizations. It includes studies testing new ways to detect, treat, delay, and prevent Alzheimers disease, other dementias, and MCI. You can search for studies about a certain topic or in a certain geographic area by going to www.nia.nih.gov/alzheimers/clinical-trials. To find out more about Alzheimers clinical trials, talk to your health care provider or contact the ADEAR Center at 1-800-438-4380 or adear@nia.nih.gov. Also, visit its website at www.nia.nih.gov/alzheimers/volunteer.",
+    "source": "NIHSeniorHealth",
+    "url": "http://nihseniorhealth.gov/alzheimersdisease/toc.html"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000407_1",
+    "doc_id": "MPlusHealthTopics_0000407",
+    "question": "What is (are) Gluten Sensitivity ?",
+    "answer": "Gluten is a protein found in wheat, rye, and barley. It is found mainly in foods but may also be in other products like medicines, vitamins, and supplements. People with gluten sensitivity have problems with gluten. It is different from celiac disease, an immune disease in which people can't eat gluten because it will damage their small intestine. Some of the symptoms of gluten sensitivity are similar to celiac disease. They include tiredness and stomachaches. It can cause other symptoms too, including muscle cramps and leg numbness. But it does not damage the small intestine like celiac disease. Researchers are still learning more about gluten sensitivity. If your health care provider thinks you have it, he or she may suggest that you stop eating gluten to see if your symptoms go away. However, you should first be tested to rule out celiac disease. Dept. of Health and Human Services Office on Women's Health",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/glutensensitivity.html"
+  },
+  {
+    "qa_id": "GARD_0005640_1",
+    "doc_id": "GARD_0005640",
+    "question": "What are the symptoms of Single upper central incisor ?",
+    "answer": "What are the signs and symptoms of Single upper central incisor? The Human Phenotype Ontology provides the following list of signs and symptoms for Single upper central incisor. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Choanal atresia 90% Midnasal stenosis 90% Short stature 90% Cognitive impairment 50% Hypotelorism 50% Intrauterine growth retardation 50% Microcephaly 50% Narrow nasal bridge 50% Premature birth 50% Short philtrum 50% Tented upper lip vermilion 50% Holoprosencephaly 33% Abnormality of the skin 7.5% Anosmia 7.5% Anterior hypopituitarism 7.5% Anteverted nares 7.5% Aplasia/Hypoplasia of the corpus callosum 7.5% Asthma 7.5% Cleft palate 7.5% Coloboma 7.5% Cyclopia 7.5% Duodenal stenosis 7.5% Hypoplasia of penis 7.5% Hypothyroidism 7.5% Iris coloboma 7.5% Maternal diabetes 7.5% Renal hypoplasia/aplasia 7.5% Scoliosis 7.5% Seizures 7.5% Short nose 7.5% Strabismus 7.5% Tetralogy of Fallot 7.5% Vertebral segmentation defect 7.5% Anophthalmia 5% Microphthalmia 5% Prominent median palatal raphe 14/14 Growth hormone deficiency 5/7 Midnasal stenosis 9/14 Choanal atresia 8/14 Hypotelorism 8/14 Short stature 7/14 Microcephaly 6/14 Specific learning disability 5/14 Intellectual disability, mild 3/14 Abnormality of chromosome segregation 2/14 Abnormality of the nasopharynx 1/14 Cleft upper lip 1/14 Autosomal dominant inheritance - Torus palatinus - Variable expressivity - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/4877/single-upper-central-incisor"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000583_1",
+    "doc_id": "MPlusHealthTopics_0000583",
+    "question": "Do you have information about Marijuana",
+    "answer": "Summary : Marijuana is a green, brown, or gray mix of dried, crumbled parts from the marijuana plant. It can be rolled up and smoked like a cigarette or cigar or smoked in a pipe. Sometimes people mix it in food or inhale it using a vaporizer. Marijuana can cause problems with memory, learning, and behavior. Smoking it can cause some of the same coughing and breathing problems as smoking cigarettes. Some people get addicted to marijuana after using it for a while. It is more likely to happen if they use marijuana every day, or started using it when they were teenagers. Some states have approved \"medical marijuana\" to ease symptoms of various health problems. The U.S. Food and Drug Administration (FDA) has not approved the marijuana plant as a medicine. However, there have been scientific studies of cannabinoids, the chemicals in marijuana. This has led to two FDA-approved medicines. They contain THC, the active ingredient in marijuana. They treat nausea caused by chemotherapy and increase appetite in patients who have severe weight loss from HIV/AIDS. Scientists are doing more research with marijuana and its ingredients to treat many diseases and conditions. NIH: National Institute on Drug Abuse",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/marijuana.html"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000094_1",
+    "doc_id": "MPlusHealthTopics_0000094",
+    "question": "What is (are) Bird Flu ?",
+    "answer": "Birds, just like people, get the flu. Bird flu viruses infect birds, including chickens, other poultry, and wild birds such as ducks. Most bird flu viruses can only infect other birds. However, bird flu can pose health risks to people. The first case of a bird flu virus infecting a person directly, H5N1, was in Hong Kong in 1997. Since then, the bird flu virus has spread to birds in countries in Asia, Africa, the Middle East, and Europe. Human infection is still very rare, but the virus that causes the infection in birds might change, or mutate, to more easily infect humans. This could lead to a pandemic, a worldwide outbreak of the illness. During an outbreak of bird flu, people who have contact with infected birds can become sick. It may also be possible to catch bird flu by eating poultry or eggs that are not well cooked or through contact with a person who has it. Bird flu can make people very sick or even cause death. Antiviral medicines may make the illness less severe, and may help prevent the flu in people who were exposed to it. There is currently no vaccine.",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/birdflu.html"
+  },
+  {
+    "qa_id": "GHR_0000151_3",
+    "doc_id": "GHR_0000151",
+    "question": "What are the genetic changes related to cardiofaciocutaneous syndrome ?",
+    "answer": "Cardiofaciocutaneous syndrome can be caused by mutations in several genes. Mutations in the BRAF gene are most common, accounting for 75 to 80 percent of all cases. Another 10 to 15 percent of cases result from mutations in one of two similar genes, MAP2K1 and MAP2K2. Fewer than 5 percent of cases are caused by mutations in the KRAS gene. The BRAF, MAP2K1, MAP2K2, and KRAS genes provide instructions for making proteins that work together to transmit chemical signals from outside the cell to the cell's nucleus. This chemical signaling pathway, known as the RAS/MAPK pathway, is essential for normal development before birth. It helps control the growth and division (proliferation) of cells, the process by which cells mature to carry out specific functions (differentiation), cell movement, and the self-destruction of cells (apoptosis). Mutations in any of these genes can result in the characteristic features of cardiofaciocutaneous syndrome. The protein made from the mutated gene is overactive, which alters tightly regulated chemical signaling during development. The altered signaling interferes with the development of many organs and tissues, leading to the signs and symptoms of cardiofaciocutaneous syndrome. Some people with the signs and symptoms of cardiofaciocutaneous syndrome do not have an identified mutation in the BRAF, MAP2K1, MAP2K2, or KRAS gene. In these cases, affected individuals may actually have Costello syndrome or Noonan syndrome, which are also caused by mutations in genes involved in RAS/MAPK signaling. The proteins produced from these genes are all part of the same chemical signaling pathway, which helps explain why mutations in different genes can cause conditions with such similar signs and symptoms. The group of related conditions that includes cardiofaciocutaneous syndrome, Costello syndrome, and Noonan syndrome is often called the RASopathies.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/cardiofaciocutaneous-syndrome"
+  },
+  {
+    "qa_id": "GHR_0000537_1",
+    "doc_id": "GHR_0000537",
+    "question": "What is (are) isolated lissencephaly sequence ?",
+    "answer": "Isolated lissencephaly sequence (ILS) is a condition that affects brain development before birth. Normally, the cells that make up the exterior of the brain (cerebral cortex) are well-organized, multi-layered, and arranged into many folds and grooves (gyri). In people with ILS, the cells of the cerebral cortex are disorganized, and the brain surface is abnormally smooth with an absence (agyria) or reduction (pachygyria) of folds and grooves. In most cases, these abnormalities impair brain growth, causing the brain to be smaller than normal (microcephaly). This underdevelopment of the brain causes severe intellectual disability, delayed development, and recurrent seizures (epilepsy) in individuals with ILS. More than 90 percent of individuals with ILS develop epilepsy, often within the first year of life. Up to 80 percent of infants with ILS have a type of seizure called infantile spasms, these seizures can be severe enough to cause brain dysfunction (epileptic encephalopathy). After the first months of life, most children with ILS develop a variety of seizure types, including persisting infantile spasms, short periods of loss of consciousness (absence seizures); sudden episodes of weak muscle tone (drop attacks); rapid, uncontrolled muscle jerks (myoclonic seizures); and episodes of muscle rigidity, convulsions, and loss of consciousness (tonic-clonic seizures). Infants with ILS may have poor muscle tone (hypotonia) and difficulty feeding, which leads to poor growth overall. Hypotonia also affects the muscles used for breathing, which often causes breathing problems that can lead to a life-threatening bacterial lung infection known as aspiration pneumonia. Children with ILS often develop muscle stiffness (spasticity) in their arms and legs and an abnormal side-to-side curvature of the spine (scoliosis). Rarely, the muscle stiffness will progress to paralysis (spastic paraplegia). Individuals with ILS cannot walk and rarely crawl. Most children with ILS do not develop communication skills.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/isolated-lissencephaly-sequence"
+  },
+  {
+    "qa_id": "GARD_0002180_1",
+    "doc_id": "GARD_0002180",
+    "question": "What is (are) Ewing sarcoma ?",
+    "answer": "Ewing sarcoma is a malignant (cancerous) bone tumor that affects children. It can occur any time during childhood and young adulthood, but usually develops during puberty, when bones are growing rapidly. The tumor may arise anywhere in the body, usually in the long bones of the arms and legs, the pelvis, or the chest. It may also develop in the skull or the flat bones of the trunk. There are few symptoms. The most common is pain and occasionally swelling at the site of the tumor. Fever may also be present. The tumor often spreads (metastasis) to the lungs and other bones. The cause of Ewing sarcoma is unknown. Most cases are thought to occur randomly and many involved a reciprocal translocation between chromosomes 11 and 22. Treatment depends upon a number of factors, but may include chemotherapy, radiation and/or surgical interventions.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/6390/ewing-sarcoma"
+  },
+  {
+    "qa_id": "GARD_0006028_1",
+    "doc_id": "GARD_0006028",
+    "question": "What is (are) TEMPI syndrome ?",
+    "answer": "TEMPI syndrome is a newly discovered, multisystem condition named for 5 characteristics that affected individuals have: Telangiectasias, Erythrocytosis with elevated erythropoietin level, Monoclonal gammopathy, Perinephric-fluid collections (fluid around the kidney), and Intrapulmonary shunting (when a region of the lungs is supplied with blood but with little or no ventilation). Signs and symptoms of TEMPI syndrome have appeared in mid-adulthood in all known affected individuals. The telangiectasias develop mostly on the face, trunk and arms. The intrapulmonary shunt causes hypoxia (not enough oxygen supply), which slowly progresses until the person needs continuous supplemental oxygen to support their breathing. Blood clots and bleeding in the brain have also been reported in some affected individuals. The cause of TEMPI syndrome is currently unknown. Treatment has reportedly been completely or partially successful with the medication bortezomib.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/10962/tempi-syndrome"
+  },
+  {
+    "qa_id": "GHR_0000389_4",
+    "doc_id": "GHR_0000389",
+    "question": "Is frontometaphyseal dysplasia inherited ?",
+    "answer": "This condition is inherited in an X-linked dominant pattern. The gene associated with this condition is located on the X chromosome, which is one of the two sex chromosomes. In females (who have two X chromosomes), a mutation in one of the two copies of the gene in each cell is sufficient to cause the disorder. In males (who have only one X chromosome), a mutation in the only copy of the gene in each cell causes the disorder. In most cases, males experience more severe symptoms of the disorder than females. A characteristic of X-linked inheritance is that fathers cannot pass X-linked traits to their sons.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/frontometaphyseal-dysplasia"
+  },
+  {
+    "qa_id": "GARD_0005683_1",
+    "doc_id": "GARD_0005683",
+    "question": "What is (are) Snyder-Robinson syndrome ?",
+    "answer": "Snyder-Robinson syndrome is an inherited condition that is characterized by intellectual disability, muscle and bone abnormalities, and other problems with development. It only occurs in males. Affected individuals have delayed development that begins in early childhood. Speech difficulties are common. Low muscle tone (hypotonia) and muscle mass leads to difficulty walking and an unsteady gait. Other features include thinning of the bones (osteoporosis), an abnormal curvature of the spine (kyphoscoliosis), and unusual facial features including a prominent lower lip, cleft palate, and facial asymmetry. Snyder-Robinson syndrome is caused by mutations in the SMS gene and is inherited in an X-linked recessive fashion.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/5615/snyder-robinson-syndrome"
+  },
+  {
+    "qa_id": "NIHSeniorHealth_0000033_22",
+    "doc_id": "NIHSeniorHealth_0000033",
+    "question": "What is (are) Heart Attack ?",
+    "answer": "Having a heart attack increases your chances of having another one. Therefore, it is very important that you and your family know how and when to seek medical attention. Talk to your doctor about making an emergency action plan, and discuss it with your family. The emergency action plan should include - warning signs or symptoms of a heart attack - instructions for accessing emergency medical services in your community, including calling 9-1-1 - steps you can take while waiting for medical help to arrive, such as taking aspirin and nitroglycerin - important information to take along with you to the hospital, such as a list of medications that you take or that you are allergic to, and name and number of whom you should contact if you go to the hospital. warning signs or symptoms of a heart attack instructions for accessing emergency medical services in your community, including calling 9-1-1 steps you can take while waiting for medical help to arrive, such as taking aspirin and nitroglycerin important information to take along with you to the hospital, such as a list of medications that you take or that you are allergic to, and name and number of whom you should contact if you go to the hospital.",
+    "source": "NIHSeniorHealth",
+    "url": "http://nihseniorhealth.gov/heartattack/toc.html"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000886_1",
+    "doc_id": "MPlusHealthTopics_0000886",
+    "question": "What is (are) Thalassemia ?",
+    "answer": "Thalassemias are inherited blood disorders. If you have one, your body makes fewer healthy red blood cells and less hemoglobin. Hemoglobin is a protein that carries oxygen to the body. That leads to anemia. Thalassemias occur most often among people of Italian, Greek, Middle Eastern, Southern Asian, and African descent. Thalassemias can be mild or severe. Some people have no symptoms or mild anemia. The most common severe type in the United States is called Cooley's anemia. It usually appears during the first two years of life. People with it may have severe anemia, slowed growth and delayed puberty, and problems with the spleen, liver, heart, or bones. Doctors diagnose thalassemias using blood tests. Treatments include blood transfusions and treatment to remove excess iron from the body. If you have mild symptoms or no symptoms, you may not need treatment. In some severe cases, you may need a bone marrow transplant. NIH: National Heart, Lung, and Blood Institute",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/thalassemia.html"
+  },
+  {
+    "qa_id": "GHR_0000556_3",
+    "doc_id": "GHR_0000556",
+    "question": "What are the genetic changes related to KBG syndrome ?",
+    "answer": "KBG syndrome is caused by mutations in the ANKRD11 gene. The protein produced from this gene enables other proteins to interact with each other and helps control gene activity. The ANKRD11 protein is found in nerve cells (neurons) in the brain. It plays a role in the proper development of the brain and may be involved in the ability of neurons to change and adapt over time (plasticity), which is important for learning and memory. ANKRD11 may function in other cells in the body and appears to be involved in normal bone development. Most of the ANKRD11 gene mutations involved in KBG syndrome lead to an abnormally short ANKRD11 protein, which likely has little or no function. Reduction of this protein's function is thought to underlie the signs and symptoms of the condition. Because ANKRD11 is thought to play an important role in neurons and brain development, researchers speculate that a partial loss of its function may lead to developmental delay and intellectual disability in KBG syndrome. However, the mechanism is not fully known. It is also unclear how loss of ANKRD11 function leads to the skeletal features of the condition.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/kbg-syndrome"
+  },
+  {
+    "qa_id": "GHR_0000222_4",
+    "doc_id": "GHR_0000222",
+    "question": "Is congenital diaphragmatic hernia inherited ?",
+    "answer": "Isolated congenital diaphragmatic hernia is rarely inherited. In almost all cases, there is only one affected individual in a family. When congenital diaphragmatic hernia occurs as a feature of a genetic syndrome or chromosomal abnormality, it may cluster in families according to the inheritance pattern for that condition.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/congenital-diaphragmatic-hernia"
+  },
+  {
+    "qa_id": "GHR_0000915_4",
+    "doc_id": "GHR_0000915",
+    "question": "Is Sjgren syndrome inherited ?",
+    "answer": "A predisposition to develop autoimmune disorders can be passed through generations in families. Relatives of people with Sjgren syndrome are at an increased risk of developing autoimmune diseases, although they are not necessarily more likely to develop Sjgren syndrome in particular. The inheritance pattern of this predisposition is unknown.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/sjogren-syndrome"
+  },
+  {
+    "qa_id": "GARD_0001527_2",
+    "doc_id": "GARD_0001527",
+    "question": "What are the symptoms of Congenital laryngeal palsy ?",
+    "answer": "What are the signs and symptoms associated with congenital laryngeal paralysis? The following online resources provide information on the signs and symptoms of congenital laryngeal paralysis: National Institute on Deafness and Other Communication Disorders- Vocal Fold Paralysis Medscape Reference - Congenital Malformations of the Larynx",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/12713/congenital-laryngeal-palsy"
+  },
+  {
+    "qa_id": "GHR_0000286_3",
+    "doc_id": "GHR_0000286",
+    "question": "What are the genetic changes related to dihydrolipoamide dehydrogenase deficiency ?",
+    "answer": "Mutations in the DLD gene cause dihydrolipoamide dehydrogenase deficiency. This gene provides instructions for making an enzyme called dihydrolipoamide dehydrogenase (DLD). DLD is one component of three different groups of enzymes that work together (enzyme complexes): branched-chain alpha-keto acid dehydrogenase (BCKD), pyruvate dehydrogenase (PDH), and alpha ()-ketoglutarate dehydrogenase (KGDH). The BCKD enzyme complex is involved in the breakdown of three protein building blocks (amino acids) commonly found in protein-rich foods: leucine, isoleucine, and valine. Breakdown of these amino acids produces molecules that can be used for energy. The PDH and KGDH enzyme complexes are involved in other reactions in the pathways that convert the energy from food into a form that cells can use. Mutations in the DLD gene impair the function of the DLD enzyme, which prevents the three enzyme complexes from functioning properly. As a result, molecules that are normally broken down and their byproducts build up in the body, damaging tissues and leading to lactic acidosis and other chemical imbalances. In addition, the production of cellular energy is diminished. The brain is especially affected by the buildup of molecules and the lack of cellular energy, resulting in the neurological problems associated with dihydrolipoamide dehydrogenase deficiency. Liver problems are likely also related to decreased energy production in cells. The degree of impairment of each complex contributes to the variability in the features of this condition.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/dihydrolipoamide-dehydrogenase-deficiency"
+  },
+  {
+    "qa_id": "GARD_0000462_1",
+    "doc_id": "GARD_0000462",
+    "question": "What are the symptoms of Arthrogryposis like disorder ?",
+    "answer": "What are the signs and symptoms of Arthrogryposis like disorder? The Human Phenotype Ontology provides the following list of signs and symptoms for Arthrogryposis like disorder. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Gait disturbance 90% Limitation of joint mobility 90% Patellar aplasia 90% Talipes 50% Abnormal form of the vertebral bodies 7.5% Abnormality of the clavicle 7.5% Aplasia/Hypoplasia of the radius 7.5% Melanocytic nevus 7.5% Scoliosis 7.5% Autosomal recessive inheritance - Skeletal muscle atrophy - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/783/arthrogryposis-like-disorder"
+  },
+  {
+    "qa_id": "GHR_0000856_4",
+    "doc_id": "GHR_0000856",
+    "question": "Is pyruvate kinase deficiency inherited ?",
+    "answer": "This condition is inherited in an autosomal recessive pattern, which means both copies of the gene in each cell have mutations. The parents of an individual with an autosomal recessive condition each carry one copy of the mutated gene, but they typically do not show signs and symptoms of the condition.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/pyruvate-kinase-deficiency"
+  },
+  {
+    "qa_id": "NIDDK_0000138_1",
+    "doc_id": "NIDDK_0000138",
+    "question": "What is (are) Anemia in Chronic Kidney Disease ?",
+    "answer": "Anemia is a condition in which the body has fewer red blood cells than normal. Red blood cells carry oxygen to tissues and organs throughout the body and enable them to use energy from food. With anemia, red blood cells carry less oxygen to tissues and organsparticularly the heart and brainand those tissues and organs may not function as well as they should.",
+    "source": "NIDDK",
+    "url": "http://www.niddk.nih.gov/health-information/health-topics/kidney-disease/anemia-in-kidney-disease-and-dialysis/Pages/facts.aspx"
+  },
+  {
+    "qa_id": "GHR_0000542_1",
+    "doc_id": "GHR_0000542",
+    "question": "What is (are) Jervell and Lange-Nielsen syndrome ?",
+    "answer": "Jervell and Lange-Nielsen syndrome is a condition that causes profound hearing loss from birth and a disruption of the heart's normal rhythm (arrhythmia). This disorder is a form of long QT syndrome, which is a heart condition that causes the heart (cardiac) muscle to take longer than usual to recharge between beats. Beginning in early childhood, the irregular heartbeats increase the risk of fainting (syncope) and sudden death.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/jervell-and-lange-nielsen-syndrome"
+  },
+  {
+    "qa_id": "GARD_0001959_2",
+    "doc_id": "GARD_0001959",
+    "question": "What are the symptoms of Dyggve-Melchior-Clausen syndrome ?",
+    "answer": "What are the signs and symptoms of Dyggve-Melchior-Clausen syndrome? Affected newborns may be small at birth, but otherwise appear normal. Skeletal findings are often recognized first between 1 and 18 months. With age, other characteristics begin to develop. Chest deformities, feeding difficulties, and developmental delay usually occur before 18 months. Disproportionate short stature usually occurs after 18 months. Additional features may include a long skull, distinctive facial appearance, a protruding jaw, microcephaly, and claw-like hands. Intellectual disability occurs in most cases, ranging from moderate to severe. Affected individuals can also develop a protruding breastbone; spinal abnormalities; abnormal bones in the hands, fingers, toes, wrists, and long bones of the arms and legs; and joint contractures, especially of the elbows and hips. Secondary problems resulting from the skeletal abnormalities may include spinal compression, dislocated hips, and restricted joint mobility. These problems may in turn cause a waddling gait. The Human Phenotype Ontology provides the following list of signs and symptoms for Dyggve-Melchior-Clausen syndrome. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Abnormality of epiphysis morphology 90% Abnormality of the hip bone 90% Abnormality of the metaphyses 90% Cognitive impairment 90% Limb undergrowth 90% Pectus carinatum 90% Short stature 90% Short thorax 90% Skeletal dysplasia 90% Abnormality of the metacarpal bones 50% Abnormality of the wrist 50% Hyperlordosis 50% Hypoplasia of the odontoid process 50% Kyphosis 50% Limitation of joint mobility 50% Microcephaly 50% Neurological speech impairment 50% Sloping forehead 50% Spinal canal stenosis 50% Attention deficit hyperactivity disorder 7.5% Autism 7.5% Shoulder dislocation 7.5% Abnormality of the nervous system - Autosomal recessive inheritance - Avascular necrosis of the capital femoral epiphysis - Barrel-shaped chest - Beaking of vertebral bodies - Brachycephaly - Broad foot - Broad palm - Camptodactyly - Carpal bone hypoplasia - Coarse facial features - Cone-shaped epiphyses of the phalanges of the hand - Coxa vara - Deformed sella turcica - Disproportionate short-trunk short stature - Distal ulnar hypoplasia - Enlargement of the costochondral junction - Flat acetabular roof - Flat glenoid fossa - Genu valgum - Hallux valgus - Hypoplastic facial bones - Hypoplastic iliac wing - Hypoplastic ischia - Hypoplastic pelvis - Hypoplastic sacrum - Hypoplastic scapulae - Iliac crest serration - Irregular iliac crest - Lumbar hyperlordosis - Mandibular prognathia - Multicentric ossification of proximal femoral epiphyses - Multicentric ossification of proximal humeral epiphyses - Narrow greater sacrosciatic notches - Platyspondyly - Postnatal growth retardation - Prominent sternum - Rhizomelia - Scoliosis - Severe global developmental delay - Shield chest - Short femoral neck - Short metacarpal - Short metatarsal - Short neck - Spondyloepimetaphyseal dysplasia - Thickened calvaria - Thoracic kyphosis - Waddling gait - Wide pubic symphysis - X-linked recessive inheritance - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/6295/dyggve-melchior-clausen-syndrome"
+  },
+  {
+    "qa_id": "GHR_0000161_1",
+    "doc_id": "GHR_0000161",
+    "question": "What is (are) caudal regression syndrome ?",
+    "answer": "Caudal regression syndrome is a disorder that impairs the development of the lower (caudal) half of the body. Affected areas can include the lower back and limbs, the genitourinary tract, and the gastrointestinal tract. In this disorder, the bones of the lower spine (vertebrae) are frequently misshapen or missing, and the corresponding sections of the spinal cord are also irregular or missing. Affected individuals may have incomplete closure of the vertebrae around the spinal cord, a fluid-filled sac on the back covered by skin that may or may not contain part of the spinal cord, or tufts of hair at the base of the spine. People with caudal regression syndrome can also have an abnormal side-to-side curvature of the spine (scoliosis). The spinal abnormalities may affect the size and shape of the chest, leading to breathing problems in some individuals. Individuals with caudal regression syndrome may have small hip bones with a limited range of motion. The buttocks tend to be flat and dimpled. The bones of the legs are typically underdeveloped, most frequently the upper leg bones (femurs). In some individuals, the legs are bent with the knees pointing out to the side and the feet tucked underneath the hips (sometimes called a frog leg-like position). Affected individuals may be born with inward- and upward-turning feet (clubfeet), or the feet may be outward- and upward-turning (calcaneovalgus). Some people experience decreased sensation in their lower limbs. Abnormalities in the genitourinary tract in caudal regression syndrome are extremely varied. Often the kidneys are malformed; defects include a missing kidney (unilateral renal agenesis), kidneys that are fused together (horseshoe kidney), or duplication of the tubes that carry urine from each kidney to the bladder (ureteral duplication). These kidney abnormalities can lead to frequent urinary tract infections and progressive kidney failure. Additionally, affected individuals may have protrusion of the bladder through an opening in the abdominal wall (bladder exstrophy). Damage to the nerves that control bladder function, a condition called neurogenic bladder, causes affected individuals to have progressive difficulty controlling the flow of urine. Genital abnormalities in males can include the urethra opening on the underside of the penis (hypospadia) or undescended testes (cryptorchidism). Females may have an abnormal connection between the rectum and vagina (rectovaginal fistula). In severe cases, both males and females have a lack of development of the genitalia (genital agenesis). People with caudal regression syndrome may have abnormal twisting (malrotation) of the large intestine, an obstruction of the anal opening (imperforate anus), soft out-pouchings in the lower abdomen (inguinal hernias), or other malformations of the gastrointestinal tract. Affected individuals are often constipated and may experience loss of control of bladder and bowel function.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/caudal-regression-syndrome"
+  },
+  {
+    "qa_id": "GHR_0000851_4",
+    "doc_id": "GHR_0000851",
+    "question": "Is purine nucleoside phosphorylase deficiency inherited ?",
+    "answer": "This condition is inherited in an autosomal recessive pattern, which means both copies of the gene in each cell have mutations. The parents of an individual with an autosomal recessive condition each carry one copy of the mutated gene, but they typically do not show signs and symptoms of the condition.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/purine-nucleoside-phosphorylase-deficiency"
+  },
+  {
+    "qa_id": "GHR_0000172_5",
+    "doc_id": "GHR_0000172",
+    "question": "What are the treatments for Char syndrome ?",
+    "answer": "These resources address the diagnosis or management of Char syndrome: - Gene Review: Gene Review: Char Syndrome - Genetic Testing Registry: Char syndrome - MedlinePlus Encyclopedia: Patent Ductus Arteriosus These resources from MedlinePlus offer information about the diagnosis and management of various health conditions: - Diagnostic Tests - Drug Therapy - Surgery and Rehabilitation - Genetic Counseling - Palliative Care",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/char-syndrome"
+  },
+  {
+    "qa_id": "CDC_0000399_9",
+    "doc_id": "CDC_0000399",
+    "question": "What is (are) Tuberculosis (TB) ?",
+    "answer": "The Division of Tuberculosis Elimination (DTBE) Laboratory Branch (LB) provides services for the following tests on mycobacterial cultures. Any local health department, licensed physician's office, licensed laboratory or licensed health care facility may submit cultures for testing but they must be routed through either their state health department or other authorized facility. Genotyping State or local TB control programs A genotyping laboratory, in Michigan is under contract with CDC to provide genotyping services to TB programs in the United States. Three genotyping methods to identify TB strains: - Spoligotyping - Mycobacterial interspersed repetitive unit (MIRU) analysis - IS6110-based restriction fragment length polymorphism (RFLP) analysis For more information, view the Guide to the Application of Genotyping to Tuberculosis Prevention and Control. DTBE epidemiologic investigations and surveillance activities - The LB provides support for DTBE epidemiologic investigations and surveillance activities. TB genotyping results, when combined with epidemiologic data, help to distinguish TB patients who are involved in the same chain of recent transmission. Drug susceptibility testing The LB performs drug susceptibility testing for selected Mycobacterium species referred from state or other authorized health facilities. Cultures of mycobacteria are tested by the indirect proportion method with antituberculosis drugs incorporated into 7H10 agar plates. Additional Resources",
+    "source": "CDC",
+    "url": "http://www.cdc.gov/tb"
+  },
+  {
+    "qa_id": "NIDDK_0000113_3",
+    "doc_id": "NIDDK_0000113",
+    "question": "How many people are affected by Irritable Bowel Syndrome in Children ?",
+    "answer": "Limited information is available about the number of children with IBS. Older studies have reported prevalence rates for recurrent abdominal pain in children of 10 to 20 percent.1 However, these studies did not differentiate IBS from functional abdominal pain, indigestion, and abdominal migraine. One study of children in North America found that 14 percent of high school students and 6 percent of middle school students have IBS. The study also found that IBS affects boys and girls equally.2",
+    "source": "NIDDK",
+    "url": "http://www.niddk.nih.gov/health-information/health-topics/digestive-diseases/ibs-in-children/Pages/facts.aspx"
+  },
+  {
+    "qa_id": "NIHSeniorHealth_0000016_11",
+    "doc_id": "NIHSeniorHealth_0000016",
+    "question": "What are the symptoms of Diabetic Retinopathy ?",
+    "answer": "At first, you will see a few specks of blood, or spots, \"floating\" in your vision. If spots occur, see your eye care professional as soon as possible. You may need treatment before more serious bleeding or hemorrhaging occurs. Hemorrhages tend to happen more than once, often during sleep. Sometimes, the spots clear without treatment, and you will see better. However, bleeding can reoccur and cause severely blurred vision. You need to be examined by your eye care professional at the first sign of blurred vision, before more bleeding occurs. If left untreated, proliferative retinopathy can cause severe vision loss and even blindness. Also, the earlier you receive treatment, the more likely treatment will be effective.",
+    "source": "NIHSeniorHealth",
+    "url": "http://nihseniorhealth.gov/diabeticretinopathy/toc.html"
+  },
+  {
+    "qa_id": "GARD_0004844_2",
+    "doc_id": "GARD_0004844",
+    "question": "What are the symptoms of Phacomatosis pigmentovascularis ?",
+    "answer": "What are the signs and symptoms of phacomatosis pigmentovascularis? Characteristic signs and symptoms of phacomatosis pigmentovascularis (PPV), include port wine stain and pigmentary lesions. The port wine stain and pigmentary lesions are often extensive and can affect several areas of the body, including the face. Examples of associated pigmentary lesions, include: Melanocytic nevi Epidermal nevi In addition to the port wine stain and pigmentary lesions, other skin lesions are not uncommon, such as: Nevus anemicus Cafe-au-lait spots Mongolian spots Nevus of Ota Nevus of Ito Nevus spilus Around half of people with PPV have systemic involvement (i.e., other body systems are affected). Eye conditions such as ocular melanosis (also called ocular melanocytosis) is common. Ocular melanosis refers to a blue-gray pigmentation in the 'white of the eye' or sclerae. This condition often occurs along with nevus of Ota and may affect one or both eyes. The complications of nevus of Ota are glaucoma and melanoma, as a result people with nevus of Ota require careful examination and follow-up by an opthamologist. Other eye conditions reported in PPV include iris hamartomas, iris mammillations, and iris nodules. Some individuals with PPV also have Sturge-Weber syndrome or Klippel-Trenaunay syndrome. Signs and symptoms of Sturge-Weber syndrome include a large port-wine stain facial birthmark, blood vessel abnormalities in the brain called leptomeningeal angiomas, as well as glaucoma, seizures, muscle weakness, paralysis, developmental delay, and intellectual disability. Klippel-Trenaunay syndrome is characterized by a port-wine stain, abnormal overgrowth of soft tissues and bones, and vein malformations. You can learn more about Sturge-Weber syndrome on our Web site at the following link: http://rarediseases.info.nih.gov/GARD/Condition/7706/Sturge_Weber_syndrome.aspx You can learn more about Klippel-Trenaunay syndrome on the Genetic Home Reference Web site at the following link: http://ghr.nlm.nih.gov/condition/klippel-trenaunay-syndrome A variety of other symptoms have been reported in individual cases of PPV (e.g., primary lymphedema, renal angiomas, moyamoya disease, scoliosis, malignant colonic polyposis, hypoplastic larynx, multiple granular cell tumors, and selective IgA deficiency). Conditions associated with PPV can vary greatly from person to person and can be difficult to predict.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/4312/phacomatosis-pigmentovascularis"
+  },
+  {
+    "qa_id": "GHR_0000521_2",
+    "doc_id": "GHR_0000521",
+    "question": "How many people are affected by infantile-onset ascending hereditary spastic paralysis ?",
+    "answer": "Infantile-onset ascending hereditary spastic paralysis is a rare disorder, with at least 30 cases reported in the scientific literature.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/infantile-onset-ascending-hereditary-spastic-paralysis"
+  },
+  {
+    "qa_id": "GARD_0004706_1",
+    "doc_id": "GARD_0004706",
+    "question": "What is (are) Pantothenate kinase-associated neurodegeneration ?",
+    "answer": "Pantothenate kinase-associated neurodegeneration (PKAN) is a rare, movement disorder characterized by a progressive degeneration of the nervous system (neurodegenerative disorder). PKAN is generally separated into classic and atypical forms. Children with classic PKAN develop symptoms in the first ten years of life. The atypical form of PKAN usually occurs after the age of ten and progresses more slowly. All individuals with PKAN have an abnormal buildup of iron in certain areas of the brain. A particular change, called the eye-of-the-tiger sign, which indicates an accumulation of iron, is typically seen on magnetic resonance imaging (MRI) scans of the brain in people with this disorder. PKAN is inherited in an autosomal recessive manner and is caused by changes (mutations) in the PANK2 gene.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/6564/pantothenate-kinase-associated-neurodegeneration"
+  },
+  {
+    "qa_id": "GHR_0000401_4",
+    "doc_id": "GHR_0000401",
+    "question": "Is geleophysic dysplasia inherited ?",
+    "answer": "This condition is inherited in an autosomal recessive pattern, which means both copies of the gene in each cell have mutations. The parents of an individual with an autosomal recessive condition each carry one copy of the mutated gene, but they typically do not show signs and symptoms of the condition.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/geleophysic-dysplasia"
+  },
+  {
+    "qa_id": "GHR_0000507_2",
+    "doc_id": "GHR_0000507",
+    "question": "How many people are affected by hypomyelination and congenital cataract ?",
+    "answer": "The prevalence of hypomyelination and congenital cataract is unknown.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/hypomyelination-and-congenital-cataract"
+  },
+  {
+    "qa_id": "NINDS_0000083_2",
+    "doc_id": "NINDS_0000083",
+    "question": "What are the treatments for Moebius Syndrome ?",
+    "answer": "There is no specific course of treatment for Moebius syndrome. Treatment is supportive and in accordance with symptoms. Infants may require feeding tubes or special bottles to maintain sufficient nutrition. Surgery may correct crossed eyes and improve limb and jaw deformities. Physical and speech therapy often improves motor skills and coordination, and leads to better control of speaking and eating abilities. Plastic reconstructive surgery may be beneficial in some individuals. Nerve and muscle transfers to the corners of the mouth have been performed to provide limited ability to smile.",
+    "source": "NINDS",
+    "url": "http://www.ninds.nih.gov/disorders/mobius/moebius.htm"
+  },
+  {
+    "qa_id": "NIDDK_0000131_1",
+    "doc_id": "NIDDK_0000131",
+    "question": "What is (are) What I need to know about Lactose Intolerance ?",
+    "answer": "Lactose * intestine lactase , enzyme *See the Pronunciation Guide for tips on how to say the words in bold type.",
+    "source": "NIDDK",
+    "url": "http://www.niddk.nih.gov/health-information/health-topics/digestive-diseases/lactose-intolerance/Pages/ez.aspx"
+  },
+  {
+    "qa_id": "MPlusHealthTopics_0000314_1",
+    "doc_id": "MPlusHealthTopics_0000314",
+    "question": "Do you have information about Ebola",
+    "answer": "Summary : Ebola hemorrhagic fever is caused by a virus. It is a severe and often fatal disease. It can affect humans and other primates. Researchers believe that the virus first spreads from an infected animal to a human. It can then spread from human to human through direct contact with a patient's blood or secretions. Symptoms of Ebola may appear anywhere from 2 to 21 days after exposure to the virus. Symptoms usually include - Fever - Headache - Joint and muscle aches - Weakness - Diarrhea - Vomiting - Stomach pain - Lack of appetite Other symptoms including rash, red eyes, and internal and external bleeding, may also occur. The early symptoms of Ebola are similar to other, more common, diseases. This makes it difficult to diagnose Ebola in someone who has been infected for only a few days. However, if a person has the early symptoms of Ebola and there is reason to suspect Ebola, the patient should be isolated. It is also important to notify public health professionals. Lab tests can confirm whether the patient has Ebola. There is no cure for Ebola. Treatment involves supportive care such as fluids, oxygen, and treatment of complications. Some people who get Ebola are able to recover, but many do not. Centers for Disease Control and Prevention",
+    "source": "MPlusHealthTopics",
+    "url": "https://www.nlm.nih.gov/medlineplus/ebola.html"
+  },
+  {
+    "qa_id": "GHR_0000220_4",
+    "doc_id": "GHR_0000220",
+    "question": "Is congenital contractural arachnodactyly inherited ?",
+    "answer": "This condition is inherited in an autosomal dominant pattern, which means one copy of the altered gene in each cell is sufficient to cause the disorder.",
+    "source": "GHR",
+    "url": "https://ghr.nlm.nih.gov/condition/congenital-contractural-arachnodactyly"
+  },
+  {
+    "qa_id": "GARD_0004643_1",
+    "doc_id": "GARD_0004643",
+    "question": "What are the symptoms of Osteoporosis oculocutaneous hypopigmentation syndrome ?",
+    "answer": "What are the signs and symptoms of Osteoporosis oculocutaneous hypopigmentation syndrome? The Human Phenotype Ontology provides the following list of signs and symptoms for Osteoporosis oculocutaneous hypopigmentation syndrome. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Generalized osteoporosis - Hypopigmentation of the skin - Ocular albinism - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/404/osteoporosis-oculocutaneous-hypopigmentation-syndrome"
+  },
+  {
+    "qa_id": "CDC_0000053_2",
+    "doc_id": "CDC_0000053",
+    "question": "Who is at risk for Parasites - Lice - Body Lice? ?",
+    "answer": "Body lice infestation is found worldwide but generally is limited to persons who live under conditions of crowding and poor hygiene who do not have access to regular bathing and changes of clean clothes, such as: - the homeless, - refugees, - survivors of war or natural disasters. Infestations can spread rapidly under such conditions. Body lice infestation can occur in people of all races. Body lice are spread through direct contact with a person who has body lice or through contact with articles such as clothing, beds, bed linens, or towels that have been in contact with an infested person. However, in the United States, actual infestation with body lice tends to be occur only in homeless, transient persons who do not have access to regular bathing and changes of clean clothes. Body lice can transmit disease. Epidemics of typhus and louse-borne relapsing fever have been caused by body lice (typically in areas where climate, poverty, and social customs or war and social upheaval prevent regular changes and laundering of clothing).",
+    "source": "CDC",
+    "url": "http://www.cdc.gov/parasites/lice/body/"
+  },
+  {
+    "qa_id": "GARD_0002837_1",
+    "doc_id": "GARD_0002837",
+    "question": "What is (are) Hereditary mucoepithelial dysplasia ?",
+    "answer": "Hereditary mucoepithelial dysplasia (HMD) is a condition that affects the skin, hair, mucosa (areas of the body that are lined with mucus), gums (gingiva), eyes, nose and lungs. Symptoms typically begin in infancy and may include development of cataracts (clouding of the eye lens); blindness; hair loss (alopecia); abnormal changes to the perineum (the area between the anus and external genitalia); and small, skin-colored bumps (keratosis pilaris). Terminal lung disease has also been reported. The cause of HMD is thought to be an abnormality in desmosomes and gap junctions, which are structures involved in cell-to-cell contact. HMD typically follows autosomal dominant inheritance, but has occurred sporadically (in an individual who has no family history of the condition). Treatment typically focuses on individual symptoms of the condition.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/5427/hereditary-mucoepithelial-dysplasia"
+  },
+  {
+    "qa_id": "GARD_0001132_2",
+    "doc_id": "GARD_0001132",
+    "question": "What are the symptoms of Cheilitis glandularis ?",
+    "answer": "What are the signs and symptoms of Cheilitis glandularis? The Human Phenotype Ontology provides the following list of signs and symptoms for Cheilitis glandularis. If the information is available, the table below includes how often the symptom is seen in people with this condition. You can use the MedlinePlus Medical Dictionary to look up the definitions for these medical terms. Signs and Symptoms Approximate number of patients (when available) Abnormality of immune system physiology 90% Abnormality of the salivary glands 90% Thick lower lip vermilion 90% Autosomal dominant inheritance - Cheilitis - Squamous cell carcinoma - The Human Phenotype Ontology (HPO) has collected information on how often a sign or symptom occurs in a condition. Much of this information comes from Orphanet, a European rare disease database. The frequency of a sign or symptom is usually listed as a rough estimate of the percentage of patients who have that feature. The frequency may also be listed as a fraction. The first number of the fraction is how many people had the symptom, and the second number is the total number of people who were examined in one study. For example, a frequency of 25/25 means that in a study of 25 people all patients were found to have that symptom. Because these frequencies are based on a specific study, the fractions may be different if another group of patients are examined. Sometimes, no information on frequency is available. In these cases, the sign or symptom may be rare or common.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/412/cheilitis-glandularis"
+  },
+  {
+    "qa_id": "GARD_0003590_1",
+    "doc_id": "GARD_0003590",
+    "question": "What is (are) Lichen planus pigmentosus ?",
+    "answer": "Lichen planus pigmentosus (LPP) is a rare form of lichen planus. It is characterized by oval or irregularly shaped brown to gray-brown macules and patches on the skin. Areas that are exposed to sun such as the forehead, temples and neck are most commonly affected. However, the macules and patches may also develop on the trunk or in places where two areas of skin touch or rub together (i.e. the armpit, groin, etc). LPP is a chronic, relapsing condition with periods of exacerbations (worsening symptoms) separated by periods of remission (a decrease in or disappearance of symptoms). Although the exact underlying cause of LPP is unknown, studies suggest that UV light, viral infections, and certain topical (applied to the skin) agents such as mustard oil and amla oil, may trigger the condition. Treatment for LPP is symptomatic.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/10816/lichen-planus-pigmentosus"
+  },
+  {
+    "qa_id": "GARD_0005199_1",
+    "doc_id": "GARD_0005199",
+    "question": "What is (are) Punctate inner choroidopathy ?",
+    "answer": "Punctate inner choroidopathy (PIC) is an inflammatory disorder that primarily affects the choroid of the eye and occurs predominantly in young, nearsighted (myopic) women. Signs and symptoms may include scotomata, blurred vision, photopsias, floaters, photophobia, distorted vision (metamorphopsia), and/or loss of peripheral vision. The majority of cases are self-limited with good visual prognosis, but permanent and severe visual loss can occur as a result of the development of choroidal neovascular membranes (CNV). The cause of PIC is not known, but it is thought to involve both genetic predisposition and environmental factors. The majority of affected individuals who do not have CNV do not require treatment; for others, treatment may include medication, laser photocoagulation, photodynamic therapy (treatment with drugs that become active when exposed to light) and/or surgery.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/7503/punctate-inner-choroidopathy"
+  },
+  {
+    "qa_id": "GARD_0005505_6",
+    "doc_id": "GARD_0005505",
+    "question": "What are the treatments for Schwannomatosis ?",
+    "answer": "How might schwannomatosis be treated? Treatment for schwannomatosis is based on the signs and symptoms present in each person. For example, pain is one of the most common symptoms of the condition. Treatment with medications such as gabapentin or pregabalin and the use of short-acting opioids and/or nonsteroidal anti-inflammatories for pain can be successful for many patients. If pain cannot be managed with other means or if the schwannomas are causing other symptoms, they can be surgically removed. However this treatment is often used as a last resort because surgery may put patients at risk of further neurologic problems.",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/4768/schwannomatosis"
+  },
+  {
+    "qa_id": "NINDS_0000031_1",
+    "doc_id": "NINDS_0000031",
+    "question": "What is (are) Asperger Syndrome ?",
+    "answer": "Asperger syndrome (AS) is a developmental disorder. It is an autism spectrum disorder (ASD), one of a distinct group of neurological conditions characterized by a greater or lesser degree of impairment in language and communication skills, as well as repetitive or restrictive patterns of thought and behavior. Other ASDs include: classic autism, Rett syndrome, childhood disintegrative disorder, and pervasive developmental disorder not otherwise specified (usually referred to as PDD-NOS). Unlike children with autism, children with AS retain their early language skills. The most distinguishing symptom of AS is a childs obsessive interest in a single object or topic to the exclusion of any other. Children with AS want to know everything about their topic of interest and their conversations with others will be about little else. Their expertise, high level of vocabulary, and formal speech patterns make them seem like little professors. Other characteristics of AS include repetitive routines or rituals; peculiarities in speech and language; socially and emotionally inappropriate behavior and the inability to interact successfully with peers; problems with non-verbal communication; and clumsy and uncoordinated motor movements. Children with AS are isolated because of their poor social skills and narrow interests. They may approach other people, but make normal conversation impossible by inappropriate or eccentric behavior, or by wanting only to talk about their singular interest.Children with AS usually have a history of developmental delays in motor skills such as pedaling a bike, catching a ball, or climbing outdoor play equipment. They are often awkward and poorly coordinated with a walk that can appear either stilted or bouncy.",
+    "source": "NINDS",
+    "url": "http://www.ninds.nih.gov/disorders/asperger/asperger.htm"
+  },
+  {
+    "qa_id": "GARD_0001851_3",
+    "doc_id": "GARD_0001851",
+    "question": "What causes Diffuse gastric cancer ?",
+    "answer": "Can diffuse gastric cancer be caused by excessive drinking? Most of the time the exact cause of gastric cancer can not be determined; however there are many different factors that may put someone at an increased risk for developing stomach cancer. While it isn't clear if alcohol alone can increase this risk, it is thought that regular drinking may increase the risk in smokers. You can visit the following information pages develped by the National Cancer Insitute and Cancer Research UK to learn more about these risks. http://www.cancer.gov/cancertopics/wyntk/stomach/page4 http://www.cancerhelp.org.uk/help/default.asp?page=3903",
+    "source": "GARD",
+    "url": "https://rarediseases.info.nih.gov/gard/10334/diffuse-gastric-cancer"
+  },
+  {
+    "qa_id": "NIDDK_0000014_2",
+    "doc_id": "NIDDK_0000014",
+    "question": "What is (are) Primary Hyperparathyroidism ?",
+    "answer": "The parathyroid glands are four pea-sized glands located on or near the thyroid gland in the neck. Occasionally, a person is born with one or more of the parathyroid glands in another location. For example, a gland may be embedded in the thyroid, in the thymusan immune system organ located in the chestor elsewhere around this area. In most such cases, however, the parathyroid glands function normally. The parathyroid glands are part of the bodys endocrine system. Endocrine glands produce, store, and release hormones, which travel in the bloodstream to target cells elsewhere in the body and direct the cells activity. Though their names are similar, the thyroid and parathyroid glands are entirely different glands, each producing distinct hormones with specific functions. The parathyroid glands produce PTH, a hormone that helps maintain the correct balance of calcium in the body. PTH regulates the level of calcium in the blood, release of calcium from bone, absorption of calcium in the small intestine, and excretion of calcium in the urine. When the level of calcium in the blood falls too low, normal parathyroid glands release just enough PTH to restore the blood calcium level.",
+    "source": "NIDDK",
+    "url": "http://www.niddk.nih.gov/health-information/health-topics/endocrine/primary-hyperparathyroidism/Pages/fact-sheet.aspx"
   }
 ]

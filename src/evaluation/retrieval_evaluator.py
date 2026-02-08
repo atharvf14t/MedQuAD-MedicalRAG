@@ -44,14 +44,14 @@ class RetrievalEvaluator:
                 return 1.0 / rank
         return 0.0
     
-    def evaluate_batch(self, eval_set: List[Dict], retrieval_results: List[List[Dict]], verbose: bool = True) -> Dict:
+    def evaluate_batch(self, eval_set: List[Dict], retrieval_results: List[List[Dict]], verbose: bool = False) -> Dict:
         """
         Evaluate retrieval results for a batch of queries.
         
         Args:
             eval_set: List of evaluation items with doc_id
             retrieval_results: List of retrieved chunk lists (one per query)
-            verbose: Whether to print per-query results (default: True)
+            verbose: Whether to print per-query results (default: False)
         
         Returns:
             Dict with metrics: Recall@1, Recall@5, Recall@10, MRR@10

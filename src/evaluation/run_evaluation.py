@@ -237,7 +237,7 @@ def main():
     parser.add_argument("--prompt_name", default="default")
     
     # Evaluation
-    parser.add_argument("--eval_size", type=int, default=10)
+    parser.add_argument("--eval_size", type=int, default=100)
     parser.add_argument("--seed", type=int, default=42)
     
     # Hardware
