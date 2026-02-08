@@ -1,0 +1,9 @@
+numpy
+faiss-cpu
+sentence-transformers
+transformers
+torch
+tqdm
+matplotlib
+rank_bm25
+langchain-text-splitters

@@ -85,7 +85,7 @@ Basic tests: write here...
 
 
 Answers: 
-1. Chunking strategy: I've used QA pair based chunking. On data analysis I found that the average token length of each answer is 201.38 tokens. On plotting histogram( see at results/answer_lengths.png)- it was found that 90% of the QA pairs are of token length lesser than 425. - So I implemented chunking with 2 sizes 
+1. Chunking strategy: Data cleaning to remove QA pairs with empty answers: Only 16402 QA pairs had non empty answers out of 47457 QA pairs. I've used QA pair based chunking. On data analysis I found that the average token length of each answer is 201.38 tokens. On plotting histogram( see at results/answer_lengths.png)- it was found that 90% of the QA pairs are of token length lesser than 425. - So I implemented chunking with 2 sizes 
 - 256 chunk size, 50 overlap - ideal for providing specific information.
 - 500 chunk size, 100 overlap - Keeping in mind that this will cover most of the answers in one chunk, this can improve the recall metrics.
 
@@ -94,7 +94,45 @@ Answers:
 3. Top_K value: Reducing the top_k value reduced the recall@5 and recall@10 when done on similar parameters. This is due to the fact that we considered lesser number of retrieval doc_ids to compare with the golden doc_id. ...(reason for reduced mrr@10 value). See run 2 & 4 in metrics.csv.
 - 
 
+4. Among all metrics, ROUGE-L and Recall@5 are the best indicators of real answer quality because ROUGE-L directly compares generated answers with reference answers- for our case it is quite low because we are using very weak generation model due to compute limitations. 
+Recall@5 provides a good estimate about the retrieval quality, since the number of retrieved chunks considered is neither too low nor too high. 
+
+Recall@10 was misleading in many cases. It remained very high across runs, but generation quality varied significantly.
+
+5. Faithfulness: how did I reduce hallucinaitons: 
+Several techniques were used:
+
+Data cleaning
+
+Removed all QA pairs without answers.
+
+Reduced noise and hallucination risk.
+
+Prompt constraints
+
+System prompt instructs the model to:
+
+Use only retrieved context.
+
+Provide citations.
+
+Return “insufficient information” when needed.
+
+Controlled top_k
+
+Reduced irrelevant context.
+
+Improved answer precision.
+
+Chunk overlap
+
+Prevented context loss at chunk boundaries.
+
 6. If I'll have 2 weeks more time, I will do more rigourous testing with better LLM models like gpt-4o-mini. I'll try different chunking techniques, like including only answers in the text field, and question in the metadata. Tuning of different alpha values (for hybrid retrieval) and lambda values for mmr retrieval can tested.  
+
+
+
+
 build index command: python -m src.main build-index   --chunks_path data/chunks.json   --index_path data/index_minilm.faiss   --embedding_model sentence-transformers/all-MiniLM-L6-v2
 <!-- it took about 45 mins to index with 17it/s as average for 31000 chunks. Can be improved by batch indexing instead of single indexing -->
 
