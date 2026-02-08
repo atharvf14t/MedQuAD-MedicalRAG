@@ -19,10 +19,13 @@ def build_faiss_index(chunks_path, index_path, model_name):
     model = SentenceTransformer(model_name)
 
     # Encode
-    embeddings = []
-    for text in tqdm(texts, desc="Embedding"):
-        emb = model.encode(text, normalize_embeddings=True)
-        embeddings.append(emb)
+    embeddings = model.encode(
+    texts,
+    batch_size=32,
+    show_progress_bar=True,
+    normalize_embeddings=True,
+)
+
 
     embeddings = np.array(embeddings).astype("float32")
 

@@ -24,3 +24,6 @@ mmr retrieval: python -m src.main query \
   --use_mmr
 
 
+create corpus command: python -m src.data.build_corpus \
+  --data_dir MedQuAD-master1 \
+  --output_path data/corpus.json

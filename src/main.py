@@ -2,8 +2,10 @@ import argparse
 import json
 import time
 import numpy as np
-
 from src.retrieval.dense_retriever import DenseRetriever
+from src.generation.rag_pipeline import RAGGenerator
+from src.evaluation.evaluate import evaluate_dataset
+
 
 from src.index.build_index import build_faiss_index
 from src.embeddings.sentence_transformer import SentenceTransformerEmbedder
@@ -13,7 +15,7 @@ from pathlib import Path
 
 from src.data.parser import parse_medquad
 from src.data.chunker import TokenChunker
-from src.utils.logging import get_logger
+from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
@@ -117,6 +119,14 @@ def main():
     query_parser.add_argument("--top_k", type=int, default=5)
     query_parser.add_argument("--use_mmr", action="store_true")
 
+    # ---- evaluate ----
+    eval_parser = subparsers.add_parser("evaluate")
+    eval_parser.add_argument("--index_path", required=True)
+    eval_parser.add_argument("--embedding_model", required=True)
+    eval_parser.add_argument("--eval_file", required=True)
+    eval_parser.add_argument("--top_k", type=int, default=5)
+
+
     args = parser.parse_args()
 
     if args.command == "build-corpus":
@@ -150,6 +160,30 @@ def main():
             print(f"Score: {r['score']:.4f}")
             print(r["chunk"]["text"])
             print("-" * 60)
+    
+    elif args.command == "evaluate":
+        retriever = DenseRetriever(
+            args.index_path,
+            args.embedding_model,
+        )
+
+        generator = RAGGenerator()
+
+        with open(args.eval_file, "r", encoding="utf-8") as f:
+            dataset = json.load(f)
+
+        metrics = evaluate_dataset(
+            dataset,
+            retriever,
+            generator,
+            top_k=args.top_k,
+        )
+
+        print("\nEvaluation results:")
+        for k, v in metrics.items():
+            print(f"{k}: {v:.4f}")
+        
+    
     else:
         parser.print_help()
 
