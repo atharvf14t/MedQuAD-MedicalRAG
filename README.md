@@ -376,6 +376,27 @@ After plotting the answer length distribution:
 The histogram is available at:
 results/answer_lengths.png
 
+## Limitations and Error Analysis
+
+During qualitative inspection, many cases with correct retrieval context still produced suboptimal answers. 
+This is primarily due to the use of the `google/flan-t5-base` model, which is relatively small and not 
+optimized for long-context instruction-following or medical QA tasks.
+
+In several examples, the retriever returned highly relevant chunks, but the generator:
+- Produced incomplete answers
+- Paraphrased key facts incorrectly
+- Omitted important details from the context
+
+An attempt was made to run evaluation using `google/flan-t5-large`, which produced noticeably better 
+qualitative outputs. However, full evaluation could not be completed due to memory and computation 
+constraints on the available hardware.
+
+This suggests that:
+- Retrieval quality is already strong (high recall and MRR).
+- Generation quality is currently the primary bottleneck.
+- Using a stronger instruction-tuned model (e.g., FLAN-T5-large or GPT-4o-mini) would likely 
+  improve ROUGE and faithfulness metrics significantly.
+
 
 ---
 
