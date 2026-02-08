@@ -82,7 +82,7 @@ python -m src.main build-corpus \
 ### 3. Run Full Evaluation Pipeline
 
 The evaluation pipeline retrieves documents, generates answers, and computes metrics (recall, MRR, ROUGE-L, citation coverage).
-
+Important: If you want to create a fresh evaluation set, kindly delete data/eval_set.json file if it exists. 
 **Basic dense retrieval:**
 
 ```bash
