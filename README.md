@@ -1,37 +1,269 @@
-Methodology of data processing:
-MedQuAD dataset contains 47,457 QA pairs. Upon doing some data research I found:
-1. Only 16,402 QA pairs had answers. 31,055 QA pairs didn't had answers to the question. So I made the corpus containing only QA pairs with answers- this reduces the chances of hallucinations and unnecessary information. 
-2. on ploting the graph for frequency of QA vs tokens: Average answer length (tokens): 201.38 and 90% of answer are of length less than 425 tokens(See the histogram at results/answer_lengths.png)
+# RAG System – MedQuAD Assignment
 
-Used configurable chunking to create 2 chunk types: 
-1. Chunk size: 256, Chunk overlap: 50
-2. Chunk size: 500, Chunk overlap: 100 - this was done keeping in mind that this will incorporate complete answers of many QA pairs in one chunk.
-3. Chunk size: 150, Chunk overlap: 40 - PS. didn't do testing on this due to long waiting times for creating index. - My computer is a bit slow.
+## Answers to Assignment Questions
+
+### 1. Chunking strategy: what did you implement and why? What failure modes did you observe?
+
+The MedQuAD dataset contains **47,457 QA pairs**, but during initial data inspection it was observed that **31,055 questions did not contain answers**. This left **16,402 QA pairs with valid answers**. Since unanswered questions would introduce noise and increase hallucination risk, the corpus was built using only QA pairs that had non-empty answers. This significantly improved retrieval quality and reduced the chances of the generator producing unsupported outputs.
+
+A statistical analysis of the answer lengths was performed. The histogram of answer token lengths showed:
+
+- **Average answer length:** 201.38 tokens  
+- **90% of answers:** under 425 tokens  
+
+Based on this distribution, configurable chunking was implemented with multiple strategies:
+
+1. **Chunk size: 256, overlap: 50**
+   - Balanced configuration.
+   - Suitable for most answers.
+   - Improves precision by keeping chunks concise.
+
+2. **Chunk size: 500, overlap: 100**
+   - Designed to include full answers in a single chunk.
+   - Improves recall because relevant information is less likely to be split.
+
+3. **Chunk size: 150, overlap: 40**
+   - Intended for high-precision retrieval.
+   - Not fully tested due to indexing time constraints.
+
+#### Failure modes observed
+- Some long answers were still split across chunks, causing partial context retrieval.
+- Overlap sometimes produced near-duplicate chunks in the top-k results.
+- Larger chunk sizes increased retrieval noise, which slightly reduced generation quality.
+
+---
+
+### 2. Embeddings: why did one embedding model win or lose?
+
+Two embedding models were used:
+
+1. **sentence-transformers/all-MiniLM-L6-v2**  
+   - Recommended in the assignment.
+   - Lightweight and fast.
+   - Common baseline for semantic retrieval.
+
+2. **BAAI/bge-small-en-v1.5**  
+   - Lightweight retrieval-optimized model.
+   - Specifically designed for dense search tasks.
+   - Known to perform better in semantic retrieval benchmarks.
+
+Both models produce **384-dimensional embeddings**, enabling fair comparison.
+
+#### Observed results (dense retrieval, same parameters)
+
+| Model | MRR@10 | Recall@1 | Recall@5 | Recall@10 | ROUGE-L |
+|------|--------|----------|----------|-----------|--------|
+| MiniLM | 0.878 | 0.81 | 0.98 | 0.98 | 0.131 |
+| BGE-small | **0.921** | **0.86** | **1.00** | **1.00** | **0.137** |
+
+The BGE model outperformed MiniLM across all retrieval metrics. This is likely because BGE is trained specifically for semantic search tasks, producing embeddings that align queries and documents more effectively.
+
+However, MiniLM had slightly faster indexing times and lower computational overhead, making it more suitable for resource-constrained environments.
+
+---
+
+### 3. Retrieval: what changed when you varied `top_k`? Did you try MMR or hybrid retrieval?
+
+Experiments were conducted with different `top_k` values and retrieval methods.
+
+#### Effect of top_k
+
+| top_k | MRR@10 | Recall@1 | Recall@5 | ROUGE-L |
+|------|--------|----------|----------|--------|
+| 5 | 0.878 | 0.81 | 0.98 | 0.131 |
+| 3 | 0.867 | 0.81 | 0.93 | **0.229** |
+
+Reducing `top_k` slightly reduced recall, but significantly improved ROUGE-L. This indicates that **less noisy context improves generation quality**, even if retrieval recall decreases.
+
+#### Retrieval method comparison
+
+| Method | MRR@10 | Recall@1 | Recall@5 | ROUGE-L |
+|--------|--------|----------|----------|--------|
+| Dense | 0.878 | 0.81 | 0.98 | 0.131 |
+| MMR | 0.879 | 0.81 | 0.97 | **0.153** |
+| Hybrid | 0.859 | 0.78 | 0.96 | 0.115 |
+
+Observations:
+
+- **MMR improved ROUGE-L** by promoting diversity in retrieved chunks.
+- Hybrid retrieval slightly reduced performance, likely due to:
+  - Noise from lexical matching.
+  - Mismatch between dense and BM25 scoring.
+
+---
+
+### 4. Evaluation: which metric best matched real quality? Which was misleading?
+
+Among all metrics, **ROUGE-L** and **Recall@5** are the best indicator of real answer quality because ROUGE-L directly compares generated answers with reference answers. For our case it is quite low because we are using very weak generation model due to compute limitations. 
+Recall@5 provides a good estimate about the retrieval quality, since the number of retrieved chunks considered is neither too low nor too high. 
+
+**Recall@10** was misleading in many cases. It remained very high across runs, but generation quality varied significantly.
+
+---
+
+### 5. Faithfulness: how did you reduce hallucinations?
+
+Several techniques were used:
+
+1. **Data cleaning**
+   - Removed all QA pairs without answers.
+   - Reduced noise and hallucination risk.
+
+2. **Prompt constraints**
+   - System prompt instructs the model to:
+     - Use only retrieved context.
+     - Provide citations. - not getting good response due to weak generation model.
+     - Return “insufficient information” when needed.
+
+3. **Controlled top_k**
+   - Reduced irrelevant context.
+   - Improved answer precision.
+
+4. **Chunk overlap**
+   - Prevented context loss at chunk boundaries.
+
+---
+
+### 6. If you had two more weeks, what would you improve first?
+
+I'll implement and run tests for cross-encoder re-ranker to check if it improves the relevance of the top retrieved chunks.
+
+Other improvements:
+
+1. Implement cross-encoder re-ranking.
+2. Tune hybrid alpha parameter and mmr lambda - extensive hyperparameter tuning experiments.
+3. Experiment with new chunking strategies.
+4. Try new prompts for LLM direction.
+5. Use stronger generation models such as GPT-4o-mini.
+6. Try to gain more knowledge on what queries are asked frequently and optimize on it.
+7. Optimize corpus further through data analysis.
+
+---
+
+## Methodology of Data Processing
+
+The MedQuAD dataset contains **47,457 QA pairs**. During preprocessing:
+
+- Only **16,402 QA pairs had answers**.
+- **31,055 QA pairs had no answers** and were removed.
+
+This reduced noise and prevented the generator from hallucinating unsupported content.
+
+After plotting the answer length distribution:
+
+- Average answer length: **201.38 tokens**
+- 90% of answers were under **425 tokens**
+
+The histogram is available at:
+results/answer_lengths.png
 
 
+---
 
-Indexing: 
-Each of the chunk sizes(1 & 2) are embedded using 2 models: 
-1. sentence-transformers/all-MiniLM-L6-v2 - recommended in the assignment
-2. BAAI/bge-small-v1.5 - Light model with (write why we used this here)
+## Chunking Strategy
 
-Embedding dimension for both models: 384. Embedding shape (20987, 384) for 500 token chunk size. 100 token chunk overlap.
-Indexing time for all-MiniLM-L6-V2 on 500 token chunk size is about 7 minutes. I used batch size of 32. Average embedding throughput- 1.8 it/s, about 58 chunks/sec. 
+Configurable chunking was implemented with multiple configurations:
 
-Embedding shape: (31392, 384)
-Indexing time for all-MiniLM-L6-V2 on 256 token chunk size is about 9 minutes. I used batch size of 32. Average embedding throughput- 2.01 it/s, about 58 chunks/sec.
+1. **Chunk size: 256, overlap: 50**
+   - Balanced precision and recall.
 
-Indexing metadata structure: 
+2. **Chunk size: 500, overlap: 100**
+   - Designed to include full answers.
+
+3. **Chunk size: 150, overlap: 40**
+   - High-precision configuration (not fully tested).
+
+---
+
+## Indexing
+
+Each chunk configuration (256 and 500) was embedded using two models:
+
+1. **all-MiniLM-L6-v2**
+   - Assignment-recommended baseline.
+
+2. **BAAI/bge-small-en-v1.5**
+   - Retrieval-optimized lightweight model.
+   - Better semantic alignment between queries and documents.
+
+Both models:
+- Embedding dimension: **384**
+
+### Indexing statistics
+This is for all-miniLM-v2 model. 
+**500 token chunks**
+- Embedding shape: (20,987, 384)
+- Overlap: 100
+- Indexing time: ~7 minutes
+- Batch size: 32
+- Throughput: ~54 chunks/sec
+
+**256 token chunks**
+- Embedding shape: (31,392, 384)
+- Overlap: 50
+- Indexing time: ~9 minutes
+- Batch size: 32
+- Throughput: ~60 chunks/sec
+
+bge-small-en-v2 embedding model took about 40-50 minitues for each chunk size.
+---
+
+## Index Metadata Structure
+
+```json
 {
-    "chunk_id": "CancerGov_0000001_4_7_c0",
-    "doc_id": "CancerGov_0000001_4",
-    "qa_id": "CancerGov_0000001_4_7",
-    "text": "question : question text here, answer: answer text here...",
-    "metadata": {
-      "source": "CancerGov",
-      "url": "https://www.cancer.gov/types/leukemia/patient"
-    }
+  "chunk_id": "CancerGov_0000001_4_7_c0",
+  "doc_id": "CancerGov_0000001_4",
+  "qa_id": "CancerGov_0000001_4_7",
+  "text": "question : question text here, answer: answer text here...",
+  "metadata": {
+    "source": "CancerGov",
+    "url": "https://www.cancer.gov/types/leukemia/patient"
+  }
 }
+
+```
+
+## Retrieval
+
+Three retrieval techniques were implemented:
+
+1. Dense retrieval  
+2. MMR re-ranking with tunable lambda  
+3. Hybrid retrieval (BM25 + Dense) with tunable alpha  
+
+All retrievers support configurable `top_k`.
+
+---
+
+## Generation
+
+Generation was performed using:
+
+- `google/flan-t5-base`
+- `google/flan-t5-large`
+
+The generation step uses system prompts loaded from JSON and supports configurable embedding models and retrievers.
+
+---
+
+## Evaluation
+
+The evaluation pipeline:
+
+1. Creates an evaluation set from the corpus.
+2. Uses configurable seed and evaluation size.
+3. Retrieves documents for each query.
+4. Computes:
+   - Recall@1
+   - Recall@5
+   - Recall@10
+   - MRR@10
+5. Generates answers.
+6. Computes:
+   - ROUGE-L (F1)
+   - Citation coverage
+7. Logs system metrics.
 
 How to run project: 
 commands:
