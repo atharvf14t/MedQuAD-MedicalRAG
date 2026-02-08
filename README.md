@@ -357,25 +357,8 @@ Other improvements:
 6. Try to gain more knowledge on what queries are asked frequently and optimize on it.
 7. Optimize corpus further through data analysis.
 
+
 ---
-
-## Methodology of Data Processing
-
-The MedQuAD dataset contains **47,457 QA pairs**. During preprocessing:
-
-- Only **16,402 QA pairs had answers**.
-- **31,055 QA pairs had no answers** and were removed.
-
-This reduced noise and prevented the generator from hallucinating unsupported content.
-
-After plotting the answer length distribution:
-
-- Average answer length: **201.38 tokens**
-- 90% of answers were under **425 tokens**
-
-The histogram is available at:
-results/answer_lengths.png
-
 ## Limitations and Error Analysis
 
 During qualitative inspection, many cases with correct retrieval context still produced suboptimal answers. 
@@ -397,6 +380,24 @@ This suggests that:
 - Using a stronger instruction-tuned model (e.g., FLAN-T5-large or GPT-4o-mini) would likely 
   improve ROUGE and faithfulness metrics significantly.
 
+--- 
+
+## Methodology of Data Processing
+
+The MedQuAD dataset contains **47,457 QA pairs**. During preprocessing:
+
+- Only **16,402 QA pairs had answers**.
+- **31,055 QA pairs had no answers** and were removed.
+
+This reduced noise and prevented the generator from hallucinating unsupported content.
+
+After plotting the answer length distribution:
+
+- Average answer length: **201.38 tokens**
+- 90% of answers were under **425 tokens**
+
+The histogram is available at:
+results/answer_lengths.png
 
 ---
 
