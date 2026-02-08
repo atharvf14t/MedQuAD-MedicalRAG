@@ -1,5 +1,224 @@
 # RAG System – MedQuAD Assignment
 
+## Project Setup & Running Instructions (Answers to questions below this section!)
+
+### 1. Environment Setup
+
+Clone or navigate to the project directory and create a Python virtual environment:
+
+```bash
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment
+# On Windows (PowerShell):
+.\.venv\Scripts\Activate.ps1
+
+# On Windows (CMD):
+.venv\Scripts\activate.bat
+
+# On macOS/Linux/WSL:
+source .venv/Scripts/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+**Note:** On Windows, `faiss-cpu` installation may require a pre-built wheel. If installation fails, consider using WSL or follow FAISS documentation for platform-specific wheels.
+
+---
+
+### 2. Data Preparation & Index Building
+
+#### Option A: Use Pre-built Chunks (Recommended)
+
+Pre-built chunk files are provided in `data/`:
+- `data/chunks_256_50.json` (256 chunk size, 50 overlap)
+- `data/chunks_500_100.json` (500 chunk size, 100 overlap)
+- `data/chunks_150_40.json` (150 chunk size, 40 overlap)
+
+Build a FAISS index from existing chunks:
+
+```bash
+python -m src.main build-index \
+  --chunks_path data/chunks_256_50.json \
+  --index_path data/all-minilm-L6-v2_256_50.faiss \
+  --embedding_model sentence-transformers/all-MiniLM-L6-v2
+```
+
+**Command options:**
+- `--chunks_path` (required): Path to the chunks JSON file
+- `--index_path` (required): Output path for the FAISS index file
+- `--embedding_model` (required): Embedding model name (e.g., `sentence-transformers/all-MiniLM-L6-v2`, `BAAI/bge-small-en-v1.5`)
+
+This creates:
+- FAISS index: `data/all-minilm-L6-v2_256_50.faiss`
+- Metadata: `data/all-minilm-L6-v2_256_50_meta.json`
+
+#### Option B: Build Chunks from Raw MedQuAD Data
+
+If you want to create chunks from the raw dataset:
+
+```bash
+python -m src.main build-corpus \
+  --data_dir MedQuAD-master1 \
+  --output data/chunks.json \
+  --chunk_size 256 \
+  --chunk_overlap 50
+```
+
+**Command options:**
+- `--data_dir` (required): Path to MedQuAD dataset root directory
+- `--output` (optional, default: `data/chunks.json`): Output path for chunks JSON
+- `--tokenizer` (optional, default: `sentence-transformers/all-MiniLM-L6-v2`): Tokenizer model for chunking
+- `--chunk_size` (optional, default: 256): Size of each chunk in tokens
+- `--chunk_overlap` (optional, default: 50): Overlap between consecutive chunks in tokens
+
+---
+
+### 3. Run Full Evaluation Pipeline
+
+The evaluation pipeline retrieves documents, generates answers, and computes metrics (recall, MRR, ROUGE-L, citation coverage).
+
+**Basic dense retrieval:**
+
+```bash
+python -m src.evaluation.run_evaluation \
+  --retriever dense \
+  --index_path data/all-minilm-L6-v2_256_50.faiss \
+  --metadata_path data/all-minilm-L6-v2_256_50.meta.json \
+  --embedding_model all-minilm-L6-v2 \
+  --top_k 5 \
+  --generation_model google/flan-t5-base \
+  --device cpu \
+  --results_dir results
+```
+
+**MMR (Maximal Marginal Relevance) retrieval:**
+
+```bash
+python -m src.evaluation.run_evaluation \
+  --retriever mmr \
+  --index_path data/all-minilm-L6-v2_256_50.faiss \
+  --metadata_path data/all-minilm-L6-v2_256_50.meta.json \
+  --embedding_model all-minilm-L6-v2 \
+  --top_k 5 \
+  --lambda_param 0.7 \
+  --generation_model google/flan-t5-base \
+  --device cpu \
+  --results_dir results
+```
+
+**Hybrid retrieval (BM25 + Dense):**
+
+```bash
+python -m src.evaluation.run_evaluation \
+  --retriever hybrid \
+  --index_path data/all-minilm-L6-v2_256_50.faiss \
+  --metadata_path data/all-minilm-L6-v2_256_50.meta.json \
+  --embedding_model all-minilm-L6-v2 \
+  --top_k 5 \
+  --alpha 0.5 \
+  --generation_model google/flan-t5-base \
+  --device cpu \
+  --results_dir results
+```
+
+**Evaluation Pipeline Command Options:**
+- `--retriever` (required): `dense`, `mmr`, or `hybrid`
+- `--index_path` (required): Path to FAISS index file
+- `--metadata_path` (required): Path to index metadata JSON file
+- `--embedding_model` (required): Embedding model name (e.g., `all-minilm-L6-v2`, `bge-small-en-v1.5`)
+- `--top_k` (optional, default: 5): Number of documents to retrieve
+- `--lambda_param` (optional, default: 0.7): MMR diversity parameter (0-1, higher = more diversity)
+- `--alpha` (optional, default: 0.5): Hybrid retriever weight for dense vs BM25 (0-1, 0 = pure BM25, 1 = pure dense)
+- `--generation_model` (optional, default: `google/flan-t5-base`): Generation model (e.g., `google/flan-t5-large`)
+- `--max_new_tokens` (optional, default: 128): Maximum tokens to generate
+- `--eval_size` (optional, default: 100): Number of evaluation samples
+- `--seed` (optional, default: 42): Random seed for evaluation set
+- `--prompt_file` (optional, default: `src/generation/prompts.json`): Path to prompts JSON
+- `--prompt_name` (optional, default: `default`): Name of prompt to use
+- `--device` (optional, default: `cpu`): Device to use (`cpu` or `cuda` for GPU)
+- `--results_dir` (optional, default: `results`): Directory to save results CSV
+
+Results are appended to `{results_dir}/metrics.csv`.
+
+---
+
+### 4. Single Query Testing (Generator CLI)
+
+Test retrieval and generation on a single query:
+
+```bash
+python -m src.generation.generator \
+  --question "What causes diabetes?" \
+  --retriever dense \
+  --index_path data/all-minilm-L6-v2_256_50.faiss \
+  --metadata_path data/all-minilm-L6-v2_256_50.meta.json \
+  --embedding_model all-minilm-L6-v2 \
+  --top_k 5 \
+  --generation_model google/flan-t5-base \
+  --device cpu
+```
+
+**Generator Command Options:**
+- `--question` (required): Query/question string
+- `--retriever` (required): `dense`, `mmr`, or `hybrid`
+- `--index_path` (required): Path to FAISS index file
+- `--metadata_path` (required): Path to index metadata JSON file
+- `--embedding_model` (required): Embedding model name
+- `--top_k` (optional, default: 3): Number of documents to retrieve
+- `--lambda_param` (optional, default: 0.7): MMR parameter (if using MMR)
+- `--alpha` (optional, default: 0.5): Hybrid weight (if using hybrid)
+- `--generation_model` (optional, default: `google/flan-t5-base`): Generation model
+- `--prompt_file` (optional, default: `src/generation/prompts.json`): Custom prompts file
+- `--prompt_name` (optional, default: `default`): Prompt template name
+- `--device` (optional, default: `cpu`): Device (`cpu` or `cuda`)
+
+---
+
+### 5. Troubleshooting
+For specific questions, contact me here: atharvdxb14@gmail.com
+**Import errors (ModuleNotFoundError):**
+
+Always run from the project root as a module:
+```bash
+python -m src.evaluation.run_evaluation ...
+```
+
+Alternatively, set `PYTHONPATH`:
+```bash
+# Linux/macOS/WSL:
+PYTHONPATH=. python src/evaluation/run_evaluation.py ...
+
+# Windows CMD:
+set PYTHONPATH=. && python src/evaluation/run_evaluation.py ...
+```
+
+**FAISS installation issues on Windows:**
+
+If `pip install faiss-cpu` fails, try:
+```bash
+pip install faiss-cpu-no-avx2
+```
+
+Or use WSL (Windows Subsystem for Linux).
+
+**GPU support:**
+Please note: I've not used GPU, hence this functionality is not tested yet.
+To use GPU (CUDA), install GPU versions of dependencies:
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install faiss-gpu
+```
+
+Then pass `--device cuda` to commands.
+
+---
+
 ## Answers to Assignment Questions
 
 ### 1. Chunking strategy: what did you implement and why? What failure modes did you observe?
@@ -24,7 +243,7 @@ Based on this distribution, configurable chunking was implemented with multiple 
 
 3. **Chunk size: 150, overlap: 40**
    - Intended for high-precision retrieval.
-   - Not fully tested due to indexing time constraints.
+   - Not tested due to time constraints and compute limitations.
 
 #### Failure modes observed
 - Some long answers were still split across chunks, causing partial context retrieval.
@@ -265,124 +484,3 @@ The evaluation pipeline:
    - Citation coverage
 7. Logs system metrics.
 
-How to run project: 
-commands:
-
-python -m src.evaluation.run_evaluation \
-  --retriever dense \
-  --index_path data/all-minilm-L6-v2_256_50.faiss \
-  --metadata_path data/all-minilm-L6-v2_256_50.meta.json \
-  --embedding_model all-minilm-L6-v2 \
-  --top_k 5 \
-  --generation_model google/flan-t5-base \
-  --device cpu \
-  --results_dir results
-
-
-build chunks command: python -m src.main build-corpus \
-  --data_dir MedQuAD-master1 \
-  --output data/chunks.json \
-  --chunk_size 256 \
-  --chunk_overlap 50
-
-
-Retrieval: 
-Implemented dense retrieval. MMR re-ranking over dense retrieval with tunable lambda. Hybrid retrieval(BM25 + Dense with tunable alpha)
-
-Retriever supports top_k for all three techniques. 
-
-
-Generation: 
-Using google/flan-t5-base and flan-t5-large models. 
-
-
-Evaluation: 
-Implemented evaluation pipeline that creates an evaluation set json, with tunable seed value and eval size.
-Retrieves the documents for each query in eval set.
-Computes recall@[1,5,10] and MRR@10 value.
-Generates answer for all the queries.
-Computes ROUGE-L (F1) averaged over example.
-Citation coverage
-Provides system metrics
-
-Error Analysis: 
-
-
-
-
-Code quality: 
-Used a modular structure (data processing, index, retrieval, generation, evaluation pipeline) in clearly defined folder structure. All the files are runnable via CLI command with tunable flags.
-Logging is done to log important info for debugging.
-Basic tests: write here...
-
-
-Answers: 
-1. Chunking strategy: Data cleaning to remove QA pairs with empty answers: Only 16402 QA pairs had non empty answers out of 47457 QA pairs. I've used QA pair based chunking. On data analysis I found that the average token length of each answer is 201.38 tokens. On plotting histogram( see at results/answer_lengths.png)- it was found that 90% of the QA pairs are of token length lesser than 425. - So I implemented chunking with 2 sizes 
-- 256 chunk size, 50 overlap - ideal for providing specific information.
-- 500 chunk size, 100 overlap - Keeping in mind that this will cover most of the answers in one chunk, this can improve the recall metrics.
-
-2. Embeddings: BAAI/bge-small-en-v1.5 model performed better than all-MiniLM-L6-v2 model over all metrics(recall@1, recall@5, recall@10, MRR@10) - see run 2 &3 in metrics.csv - for similar chunk size, overlap size and retrieval method (dense). This highlights the fact that using better embedding models provides better retrieval. Also semantic chunking is performed for both the models which further improved the performance.
-
-3. Top_K value: Reducing the top_k value reduced the recall@5 and recall@10 when done on similar parameters. This is due to the fact that we considered lesser number of retrieval doc_ids to compare with the golden doc_id. ...(reason for reduced mrr@10 value). See run 2 & 4 in metrics.csv.
-- 
-
-4. Among all metrics, ROUGE-L and Recall@5 are the best indicators of real answer quality because ROUGE-L directly compares generated answers with reference answers- for our case it is quite low because we are using very weak generation model due to compute limitations. 
-Recall@5 provides a good estimate about the retrieval quality, since the number of retrieved chunks considered is neither too low nor too high. 
-
-Recall@10 was misleading in many cases. It remained very high across runs, but generation quality varied significantly.
-
-5. Faithfulness: how did I reduce hallucinaitons: 
-Several techniques were used:
-
-Data cleaning
-
-Removed all QA pairs without answers.
-
-Reduced noise and hallucination risk.
-
-Prompt constraints
-
-System prompt instructs the model to:
-
-Use only retrieved context.
-
-Provide citations.
-
-Return “insufficient information” when needed.
-
-Controlled top_k
-
-Reduced irrelevant context.
-
-Improved answer precision.
-
-Chunk overlap
-
-Prevented context loss at chunk boundaries.
-
-6. If I'll have 2 weeks more time, I will do more rigourous testing with better LLM models like gpt-4o-mini. I'll try different chunking techniques, like including only answers in the text field, and question in the metadata. Tuning of different alpha values (for hybrid retrieval) and lambda values for mmr retrieval can tested.  
-
-
-
-
-build index command: python -m src.main build-index   --chunks_path data/chunks.json   --index_path data/index_minilm.faiss   --embedding_model sentence-transformers/all-MiniLM-L6-v2
-<!-- it took about 45 mins to index with 17it/s as average for 31000 chunks. Can be improved by batch indexing instead of single indexing -->
-
-Vanilla dense retrieval: python -m src.main query \
-  --index_path data/index_minilm.faiss \
-  --embedding_model sentence-transformers/all-MiniLM-L6-v2 \
-  --question "What causes diabetes?" \
-  --top_k 5
-
-
-mmr retrieval: python -m src.main query \
-  --index_path data/index_minilm.faiss \
-  --embedding_model sentence-transformers/all-MiniLM-L6-v2 \
-  --question "What causes diabetes?" \
-  --top_k 5 \
-  --use_mmr
-
-
-create corpus command: python -m src.data.build_corpus \
-  --data_dir MedQuAD-master1 \
-  --output_path data/corpus.json
